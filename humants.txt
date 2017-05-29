@@ -1,0 +1,22 @@
+/* TEAM */
+	Chef Software Engineer:Andreas Kapp
+	Contact: hello [at] kapp.technology
+	Twitter: @andreaskapp
+	From:Biel-Bienne, Bern, Switzerland
+
+	UI and Business Case: Andrea Kapp
+	Twitter: @psychologin_biel
+	From:Biel-Bienne, Bern, Switzerland
+
+
+/* THANKS */
+
+	EN Translator:
+	Twitter: 
+	From: 
+
+/* SITE */
+	Last update:2017/05/30
+	Language: Deutsch 
+	Doctype:HTML5
+	
