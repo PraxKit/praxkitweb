@@ -6576,3 +6576,10 @@ iframe[seamless] {
     margin: 15px;
   }
 }
+
+img { display: block; width: 90%; }
+
+img {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
