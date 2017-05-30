@@ -11,3 +11,8 @@ sudo: false
 #install: true
 #build: true
 #after_success: curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {index.html}  $FTP_TARGET
+
+provider: script
+    script: push_files.rb
+    on:
+      branch: master
