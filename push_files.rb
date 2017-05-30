@@ -7,4 +7,4 @@ ftp_password = ENV['FTP_PASSWORD']
 
 print("\n #{ftp_server}\n")
 ftp = FtpSync.new(ftp_server, ftp_user, ftp_password, true)
-ftp.sync('.', '/')
+ftp.sync('./_www', '/')
