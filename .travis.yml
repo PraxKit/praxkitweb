@@ -2,17 +2,21 @@
 #scala:
 #   - 2.12.2
 #jdk: oraclejdk8
+language: ruby
+rvm:
+  - 2.2
+  
 branches:
   only:
     - master
 
 dist: trusty
 sudo: false
-#install: true
-#build: true
+install: true
+build: true
 #after_success: curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {index.html}  $FTP_TARGET
-
-provider: script
-    script: push_files.rb
+deploy:
+  provider: script
+    script: rvm $TRAVIS_RUBY_VERSION do push_files.rb
     on:
       branch: master
