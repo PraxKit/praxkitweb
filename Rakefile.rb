@@ -1,5 +1,7 @@
 task default: %w[build]
 
 task :build do
-  puts "Build."
+  puts "Starting Build."
+  ruby "push_files.rb"
+  puts "Build done."
 end
