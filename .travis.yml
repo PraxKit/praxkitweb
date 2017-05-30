@@ -13,6 +13,10 @@ sudo: false
 install: true
 build: true
 #after_success: curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {index.html}  $FTP_TARGET
+
+before_deploy:
+  - sudo chmod +x ./push_files.rb
 deploy:
   provider: script
   script: rvm $TRAVIS_RUBY_VERSION do ./push_files.rb
+
