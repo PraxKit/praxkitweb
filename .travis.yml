@@ -1,13 +1,13 @@
-language: scala
-scala:
-   - 2.12.2
-jdk: oraclejdk8
+#language: scala
+#scala:
+#   - 2.12.2
+#jdk: oraclejdk8
 branches:
   only:
     - master
 
 dist: trusty
 sudo: false
-install: true
-build: true
-after_success: curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {index.html}  $FTP_TARGET
+#install: true
+#build: true
+#after_success: curl -u $FTP_USER:$FTP_PASSWORD --ftp-create-dirs -T {index.html}  $FTP_TARGET
