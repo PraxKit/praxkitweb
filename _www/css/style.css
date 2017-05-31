@@ -5223,7 +5223,7 @@ a.list-group-item.active>.badge,
 
 .jumbotron p {
     margin-bottom: 15px;
-    font-size: 21px;
+    font-size: 1.2em;
     font-weight: 200;
 }
 
@@ -5246,7 +5246,7 @@ a.list-group-item.active>.badge,
     }
     .jumbotron h1,
     .jumbotron .h1 {
-        font-size: 63px;
+        font-size: 2em;
     }
 }
 
