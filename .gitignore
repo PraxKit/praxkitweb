@@ -1,3 +1,5 @@
 target/
 ftp_env.sh
 node_modules/
+_www/assets/css/
+_www/assets/js/

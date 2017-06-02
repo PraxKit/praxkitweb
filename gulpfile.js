@@ -7,43 +7,35 @@ var minify = require('gulp-clean-css');
 
 
 gulp.task('sass', function() {
-    return gulp.src('src/kube.scss')
-        .pipe(sass())
-        .pipe(gulp.dest('dist/css'))
-        .pipe(rename('kube.min.css'))
+    return gulp.src('src/styles/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('_www/assets/css'))
+        .pipe(rename('app.min.css'))
         .pipe(minify())
-        .pipe(gulp.dest('dist/css'));
+        .pipe(gulp.dest('_www/assets/css'));
 });
 
 gulp.task('combine', function() {
     return gulp.src([
-            'src/_scss/_variables.scss',
-            'src/_scss/mixins/_breakpoints.scss',
-            'src/_scss/mixins/_fonts.scss',
-            'src/_scss/mixins/_flex.scss',
-            'src/_scss/mixins/_grid.scss',
-            'src/_scss/mixins/_utils.scss',
-            'src/_scss/mixins/_buttons.scss',
-            'src/_scss/mixins/_gradients.scss',
-            'src/_scss/mixins/_labels.scss'
+            'src/styles/**/*.scss'
         ])
-        .pipe(concat('kube.scss'))
-        .pipe(gulp.dest('dist/scss'));
+        .pipe(concat('app.scss'))
+        .pipe(gulp.dest('_www/assets/css'));
 });
 
 gulp.task('scripts', function() {
-    return gulp.src(scripts)
-        .pipe(concat('kube.js'))
-        .pipe(gulp.dest('dist/js'))
-        .pipe(rename('kube.min.js'))
+    return gulp.src('src/js/**/*.js')
+        .pipe(concat('app.js'))
+        .pipe(gulp.dest('_www/assets/js'))
+        .pipe(rename('app.min.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('dist/js'));
+        .pipe(gulp.dest('_www/assets/js'));
 });
 
 gulp.task('watch', function() {
 
-    gulp.watch(scripts, ['scripts']);
-    gulp.watch(['src/_scss/*.scss', 'src/_scss/components/*.scss', 'src/_scss/mixins/*.scss'], ['sass', 'combine']);
+    gulp.watch('src/js', ['scripts']);
+    gulp.watch('src/styles/**/*.scss', ['sass', 'combine']);
 
 });
 
