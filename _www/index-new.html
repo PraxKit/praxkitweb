@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta Data -->
     <title>PraxKit - Mehr Zeit für dich</title>
@@ -66,42 +66,83 @@
 
 <body id="top" data-spy="scroll" data-target=".navbar" data-offset="70">
 
+
     <!-- Navigation
         ======================================== -->
+    <!-- Just an image -->
+    <nav class="navbar navbar-light bg-faded">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/praxkit-logo.png" width="100" height="100" alt="">
+        </a>
+    </nav>
 
-    <header class="navbar navbar-default navbar-fixed-top" role="banner">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                <a href="/" class="navbar-brand"><i class="fa fa-star fa-lg"></i> PraxKit</a>
-            </div>
-            <nav class="collapse navbar-collapse" role="navigation">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a class="scroll" href="#top">Home</a>
-                    </li>
-                    <li>
-                        <!-- data-toggle="collapse" data-target=".navbar-collapse" -->
-                        <a class="scroll" href="#werte">Werte</a>
-                    </li>
-                    <li>
-                        <!-- data-toggle="collapse" data-target=".navbar-collapse" -->
-                        <a class="scroll" href="#features">Features</a>
-                    </li>
-                    <li>
-                        <!-- data-toggle="collapse" data-target=".navbar-collapse" -->
-                        <a class="scroll" href="#kontakt">Kontakt</a>
-                    </li>
-                </ul>
-            </nav>
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <a class="navbar-brand" href="#"><img src="assets/img/praxkit-logo.png" alt="praxkit-logo" height="70"></a>
+
+        <div class="collapse navbar-toggleable" id="navbarSupportedContent">
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-item" href="#top">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <!-- data-toggle="collapse" data-target=".navbar-collapse" -->
+                    <a class="nav-item" href="#werte">Werte</a>
+                </li>
+                <li>
+                    <!-- data-toggle="collapse" data-target=".navbar-collapse" -->
+                    <a class="nav-item" href="#features">Features</a>
+                </li>
+                <li>
+                    <!-- data-toggle="collapse" data-target=".navbar-collapse" -->
+                    <a class="nav-item scroll" href="#kontakt">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary" href="#">Anmelden</a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
+
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div id="stage">
+            <div id="stage-caption">
+                <h1 class="display-3">That's handy, Harry! Stick it in the Startup.logo.</h1>
+                <p>I see Startup.lgo in your future.</p>
+                <a href="" class="btn btn-lg btn-success">Sign up now</a>
+            </div>
+        </div>
+    </div>
     <!-- Jumbotron
         ======================================== -->
     <div class="jumbotron">
@@ -135,27 +176,26 @@
     </div>
     <!-- Hero
         ======================================== -->
-    <!-- <div class="container"> -->
-    <div class="hero">
-        <div class='hero-inner'>
-            <!-- hero image -->
-            <img class="hero-image" src="img/feature_sm.png" alt="Danila">
-            <!-- hero content -->
-            <div class="hero-content">
-                <h2>
-                    So spare ich 10 Minuten pro Sitzung.
-                </h2>
-                <p class="lead">
-                    Bei 80 Terminen brauche ich mehr als ein Tag Administration. PraxKit reduziert dies auf wenige Minuten.
-                </p>
-                <p>
-                    <a class="btn btn-primary btn-lg" href="#profile">Mehr erfahren <i class="fa fa-chevron-right"></i></a>
-                </p>
+    <div class="container">
+        <div class="hero">
+            <div class='hero-inner'>
+                <!-- hero image -->
+                <img class="hero-image" src="img/feature_sm.png" alt="Danila">
+                <!-- hero content -->
+                <div class="hero-content">
+                    <h2>
+                        So spare ich 10 Minuten pro Sitzung.
+                    </h2>
+                    <p class="lead">
+                        Bei 80 Terminen brauche ich mehr als ein Tag Administration. PraxKit reduziert dies auf wenige Minuten.
+                    </p>
+                    <p>
+                        <a class="btn btn-primary btn-lg" href="#profile">Mehr erfahren <i class="fa fa-chevron-right"></i></a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <!-- </div> -->
-
 
     <!-- Featurettes
         ======================================== -->
@@ -396,9 +436,11 @@
         </div>
     </footer>
 
+
+
     <!-- Scripts
         ======================================== -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="assets/js/app.js" type="text/javascript"></script>
 
     <!-- To collapse the Nav on the mobile view after a click -->

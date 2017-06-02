@@ -1,25 +1,54 @@
 // add your custom styles here
 // to learn more about SASS, visit sass-lang.com
-$font-stack: Helvetica,
-sans-serif;
-$primary-color: #333;
+html,
 body {
-    font: 100% $font-stack;
-    color: $primary-color;
+    height: 100%;
 }
 
-nav {
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    li {
-        display: inline-block;
-    }
-    a {
-        display: block;
-        padding: 6px 12px;
-        text-decoration: none;
-    }
+
+/*
+img {
+    max-width: 100%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+*/
+
+
+/* cover */
+
+#cover {
+    background: #222 url('img/stars.jpg') center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#cover-caption {
+    width: 100%;
+}
+
+.section-content {
+    padding: 5rem 0;
+}
+
+#about {
+    background: url('img/girlincar.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.about-text {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1.875rem;
+}
+
+#footer-main {
+    background: #222;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2.5rem 0;
 }
