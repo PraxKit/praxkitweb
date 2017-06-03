@@ -17,13 +17,6 @@
     }
 }
 
-#einladung {
-    h1 {
-        color: black;
-    }
-    color: grey;
-}
-
 
 /* NAVBAR FIXED-TOP 
 span.anchor {
@@ -43,6 +36,11 @@ span.anchor {
     position: relative;
     background: url("../img/bg.jpg") top center;
     background-size: cover;
+}
+
+#warumpraxkit {
+    margin-top: 2em;
+    margin-bottom: 0.8em;
 }
 
 .hero-content {
@@ -87,7 +85,7 @@ span.anchor {
 .footer {
     background-color: black;
     color: white;
-    padding-bottom: 1em;
+    padding-bottom: 3em;
     padding-top: 2em;
     #address {
         padding-left: 8em;
@@ -100,6 +98,14 @@ span.anchor {
     float: left;
     padding-right: 5px;
     margin-bottom: -1.25em;
+}
+
+div.jumbotron {
+    background: #4baad3;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin-top: 2em;
+    margin-bottom: 3em;
 }
 // // Variables
 // //
@@ -1095,7 +1101,7 @@ span.anchor {
 //@import "../../node_modules/bootstrap/scss/custom-forms";
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/navbar";
-//@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/card";
 //@import "../../node_modules/bootstrap/scss/breadcrumb";
 //@import "../../node_modules/bootstrap/scss/pagination";
 //@import "../../node_modules/bootstrap/scss/badge";
