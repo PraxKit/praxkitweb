@@ -4106,44 +4106,27 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-html,
-body {
-  height: 100%; }
-
-/*
-img {
-    max-width: 100%;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-}
-*/
-/* cover */
-#cover {
-  background: #222 url("img/stars.jpg") center center no-repeat;
-  background-size: cover;
-  color: white;
-  height: 100%;
-  text-align: center;
-  display: flex;
-  align-items: center; }
-
-#cover-caption {
-  width: 100%; }
-
-.section-content {
-  padding: 5rem 0; }
-
-#about {
-  background: url("img/girlincar.jpg") center center no-repeat;
+#intro {
+  overflow: hidden;
+  position: relative;
+  background: url("../img/praxkit-tree.jpg") top center;
   background-size: cover; }
 
-.about-text {
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 1.875rem; }
+#stage {
+  color: yellow;
+  margin-top: 6em;
+  margin-bottom: 7em; }
+  #stage .display-5 {
+    color: chartreuse; }
 
-#footer-main {
-  background: #222;
-  color: white;
-  font-size: 0.8rem;
-  padding: 2.5rem 0; }
+#einladung {
+  color: grey; }
+  #einladung h1 {
+    color: darkgray; }
+
+span.anchor {
+  display: block;
+  height: 124px;
+  /* height of nav, in this case 124px */
+  visibility: hidden;
+  position: relative; }
