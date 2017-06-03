@@ -4334,6 +4334,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   #stage .display-5 {
     color: chartreuse; }
 
+#einladung {
+  color: yellowgreen; }
+  #einladung h1 {
+    color: black; }
+  #einladung .display-5 {
+    color: yellow; }
+
 /* NAVBAR FIXED-TOP 
 span.anchor {
     display: block;
@@ -4353,6 +4360,9 @@ span.anchor {
 #warumpraxkit {
   margin-top: 2em;
   margin-bottom: 0.8em; }
+
+div.card {
+  background-color: yellow; }
 
 .hero-content {
   display: block;
@@ -4384,7 +4394,9 @@ span.anchor {
   #values h3 {
     color: chartreuse; }
   #values .display-4 {
-    color: yellow; }
+    color: yellow;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em; }
 
 .footer {
   background-color: black;

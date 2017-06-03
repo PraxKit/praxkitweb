@@ -17,6 +17,16 @@
     }
 }
 
+#einladung {
+    h1 {
+        color: black;
+    }
+    color: yellowgreen;
+    .display-5 {
+        color: yellow;
+    }
+}
+
 
 /* NAVBAR FIXED-TOP 
 span.anchor {
@@ -41,6 +51,10 @@ span.anchor {
 #warumpraxkit {
     margin-top: 2em;
     margin-bottom: 0.8em;
+}
+
+div.card {
+    background-color: yellow;
 }
 
 .hero-content {
@@ -79,6 +93,8 @@ span.anchor {
     }
     .display-4 {
         color: yellow;
+        margin-top: 1.2em;
+        margin-bottom: 0.5em;
     }
 }
 
