@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- SEO Meta Data -->
     <title>PraxKit - Mehr Zeit für dich</title>
@@ -36,9 +36,10 @@
     <link rel="author" href="humans.txt" />
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/theme.css">
-    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.css">
+    <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+-->
 
     <!-- Fonts -->
     <link rel="stylesheet" type='text/css' href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css'>
@@ -66,349 +67,413 @@
 
 <!-- activate scrollspy -->
 
-<body id="top" data-spy="scroll" data-target=".navbar" data-offset="70">
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="400">
+
 
     <!-- Navigation
         ======================================== -->
 
-    <header class="navbar navbar-default navbar-fixed-top" role="banner">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                <a href="/" class="navbar-brand"><i class="fa fa-star fa-lg"></i> PraxKit</a>
-            </div>
-            <nav class="collapse navbar-collapse" role="navigation">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a class="scroll" href="#top">Home</a>
-                    </li>
-                    <li>
-                        <!-- data-toggle="collapse" data-target=".navbar-collapse" -->
-                        <a class="scroll" href="#werte">Werte</a>
-                    </li>
-                    <li>
-                        <!-- data-toggle="collapse" data-target=".navbar-collapse" -->
-                        <a class="scroll" href="#features">Features</a>
-                    </li>
-                    <li>
-                        <!-- data-toggle="collapse" data-target=".navbar-collapse" -->
-                        <a class="scroll" href="#kontakt">Kontakt</a>
-                    </li>
-                </ul>
-            </nav>
+    <nav class="navbar  navbar-toggleable-sm  bg-faded navbar-inverse bg-inverse">
+
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/praxkit-logo.png" width="70" height="70" alt="">
+        </a>
+
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+             </button>
+        <span class="navbar-text"> Die genial einfache Praxis App. Auch für unterwegs. </span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto w-100 justify-content-center">
+                <li class="nav-item active ">
+                    <a class="nav-link " href="#top ">Home <span class="sr-only ">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <!-- data-toggle="collapse " data-target=".navbar-collapse " -->
+                    <a class="nav-link scroll" href="#werte "> Werte</a>
+                </li>
+                <li class="nav-item ">
+                    <!-- data-toggle="collapse " data-target=".navbar-collapse " -->
+                    <a class="nav-link scroll " href="#features ">Funktionen</a>
+                </li>
+                <li class="nav-item ">
+                    <!-- data-toggle="collapse " data-target=".navbar-collapse " -->
+                    <a class="nav-link scroll " href="#preis ">Preise</a>
+                </li>
+                <li class="nav-item ">
+                    <!-- data-toggle="collapse " data-target=".navbar-collapse " -->
+                    <a class="nav-link scroll " href="#kontakt ">Kontakt</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                <li class="nav-item ">
+                    <a class="btn align-middle btn-outline-success scroll" href="# ">Anmelden</a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <!-- Jumbotron
+    <!-- Intro
         ======================================== -->
-    <div class="jumbotron">
-        <div class="container">
-            <h1>
-                Liebe Therapeutinnen und Therapeuten
-            </h1>
-            <p>
-                Bist Du auch selbstständig oder möchtest es in Zukunft werden? Suchst Du auch noch nach einer einfachen Lösung für deine Administration?
-            </p>
+    <span class="anchor" id="SECTION"></span>
+    <section id="SECTION" REST OF SECTION HERE>
+        <div id="intro" class="container-fluid ">
+            <div id="stage">
+                <div id="stage-caption ">
+                    <h1 class="display-4 text-left">Mehr Zeit für das Wesentliche gewinnen</h1>
+                    <br>
+                    <h1 class="display-5 text-left">Einfach deine Praxis Administration erledigen.</h1>
+                    <h1 class="display-5 text-left">Vom Termin zur Abrechnung.</h1>
 
-            <p>
-                Wir bauen hier ein Tool, das uns mehr Freizeit schenken wird. .
-            </p>
-
-            <p>
-                Zeit für das Wesentliche. PraxKit soll Spass machen. Den Aufwand für die Rechnungstellung minieren. Vom Termin vereinbaren bis zur Rechnungsstellung und Zahlungseingang.
-            </p>
+                </div>
+            </div>
 
 
-            <p>
-                Sobald wir PraxKit fertig und getestet haben, kannst auch Du mitmachen.
-            </p>
-            <p>
-                Melde dich hier an. Dann schicken wir dir eine Nachricht wenn es so weit ist.
-            </p>
-            <p>
-                <a href="#kontakt" class="btn btn-primary btn-lg" role="button">Mitmachen <i class="fa fa-chevron-right"></i></a>
-            </p>
+
+            <div class="row">
+                <div class="col-sm-6">
+
+                    <!-- Jumbotron
+        ======================================== -->
+                    <div class="jumbotron" id="einladung">
+                        <div class="container">
+                            <h1 class="display-5">
+                                Liebe Therapeutinnen und Therapeuten
+                            </h1>
+                            <p class="lead">
+                                Bist Du selbstständig tätig oder möchtest es in Zukunft werden? Suchst Du auch nach einer <em>einfachen Lösung</em> für deine Administration?
+                            </p>
+
+                            <p class="lead">
+                                Wir bauen hier ein Tool, das uns mehr Freizeit schenken wird. Mehr Zeit für das Wesentliche.
+
+                            </p>
+                            <p class="lead"> PraxKit soll Spass machen. Den Aufwand für die Rechnungstellung minieren. Vom Termin vereinbaren bis zur Rechnungsstellung und Zahlungseingang. </p>
+                            </p>
+
+                            <p class="lead">
+                                Sobald wir PraxKit fertig und getestet ist, schicken wir dir ein Mail. Wenn Du Ideen hast und diese Einbringen willst, melde dich doch bei uns.
+                            </p>
+
+                            <p class="lead text-left">
+                                <a href="#kontakt " class="btn bt-bg btn-primary" role="button ">Mitmachen <i class="fa fa-chevron-right"></i></a>
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-sm-6">
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Therapeutin Danila
+        ======================================== -->
+
+    <div id="danila" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <!-- hero image -->
+                <img class="img-fluid" src="assets/img/therapeutin-danila.png " alt="Therapeutin Danila ">
+            </div>
+            <div class="col-sm-6">
+
+                <!-- hero content -->
+                <div class="hero-content ">
+                    <h1 class="display-3">
+                        So spare ich 10 Minuten pro Sitzung.
+                    </h1>
+                    <h1 class="lead">
+                        Bei 80 Terminen brauche ich mehr als ein Tag Administration.<br> PraxKit reduziert dies auf wenige Minuten.<br> Und es braucht keine PC Installation.<br>Jederzeit sehe ich, wie viel ich verdient habe.
+                    </h1>
+                    <p>
+                        <br>
+                        <a class="btn btn-primary btn-lg btn-outline-success" href="#profile ">Mehr erfahren <i class="fa fa-chevron-right "></i></a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <!-- Hero
-        ======================================== -->
-    <!-- <div class="container"> -->
-    <div class="hero">
-        <div class='hero-inner'>
-            <!-- hero image -->
-            <img class="hero-image" src="img/feature_sm.png" alt="Danila">
-            <!-- hero content -->
-            <div class="hero-content">
-                <h2>
-                    So spare ich 10 Minuten pro Sitzung.
-                </h2>
-                <p class="lead">
-                    Bei 80 Terminen brauche ich mehr als ein Tag Administration. PraxKit reduziert dies auf wenige Minuten.
-                </p>
-                <p>
-                    <a class="btn btn-primary btn-lg" href="#profile">Mehr erfahren <i class="fa fa-chevron-right"></i></a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- </div> -->
 
-
-    <!-- Featurettes
+    <!-- Werte
         ======================================== -->
     <!-- Internal Anchor with CSS to account for fixed navigation header -->
-    <a id="werte" class="anchor invisible"></a>
-    <div class='container featurette'>
-        <div class="hero-content">
+    <a id="werte " class="anchor invisible "></a>
+    <div id="values" class="container-fluid">
 
-            <h1 class="lead">Welche Werte wollen wir schaffen?</h1>
-            <br>
+        <div class="row">
+            <div class="col-sm-4"> </div>
+            <div class="col-sm-8">
+                <div class="jumbotron-fluid">
+                    <br>
+                    <h1 class="display-4 ">Welche Werte wollen wir schaffen?</h1>
+                    <br>
 
+                </div>
+            </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-7">
+            <div class="col-sm-4"> </div>
+            <div class="col-sm-8">
                 <h1>
-                    Mehr Zeit für Café. <span class="text-muted">Diskutieren, Nachdenken, Entspannen.</span>
+                    Mehr Zeit für Café. <span class="text-alternative "> Entspannen, Diskutieren, Nachdenken.</span> Mehr Zeit für Familie und Freunde. <span class="text-alternative ">Tun, was einem wichtig ist.</span> Sport statt Bürokram. <span class="text-alternative ">Dem Körper etwas Gutes tun.</span>
                 </h1>
-                <p class="lead hidden-xs">
-                    Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-                </p>
-            </div>
-            <div class="col-sm-5">
-                <img class="img-rounded img-responsive pull-right" src="img/coffee.gif" alt="Generic placeholder image">
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-sm-7 col-sm-push-5">
-                <h1>
-                    Mehr Zeit für Familie und Freunde. <span class="text-muted">Tun, was einem wichtig ist.</span>
-                </h1>
-                <p class="lead hidden-xs">
-                    Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-                </p>
-            </div>
-            <div class="col-sm-5 col-sm-pull-7">
-                <img class="img-rounded img-responsive" src="img/family.gif" alt="Generic placeholder image">
-            </div>
-        </div>
-        <hr>
-        <div class="row">
-            <div class="col-sm-7">
-                <h1>
-                    Sport statt Bürokram. <span class="text-muted">Dem Körper etwas Gutes tun.</span>
-                </h1>
-                <p class="lead hidden-xs">
-                    Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-                </p>
-            </div>
-            <div class="col-sm-5">
-                <img class="img-rounded img-responsive pull-right" src="img/art.gif" alt="Generic placeholder image">
-            </div>
-        </div>
-    </div>
 
-    <hr>
+            </div>
+        </div>
 
-    <!-- Jumbotron
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-sm-4"> </div>
+                <div class="col-sm-8">
+                    <div class="jumbotron">
+                        <h1 class="display-4">
+                            Deinen Kunden schenkst Du alle Aufmerksamkeit.
+                        </h1>
+                        <h2>
+                            Den Rest erledigst Du nebenbei mit PraxKit: Termine, Adressen, Rechnungen, Zahlungseingänge.
+                        </h2>
+                    </div>
+
+                    <!-- Marketing Section
         ======================================== -->
-    <div class="jumbotron">
-        <div class="container">
-            <h1>
-                Deine Klienten verdienen deine Aufmerksamkeit.
-            </h1>
-            <h2>
-                Den Rest erledigst Du nebenbei mit PraxKit: Termine, Adressen, Rechnungen, Zahlungseingänge.
-            </h2>
+                    <a id="features " class="anchor invisible "></a>
 
-        </div>
-    </div>
+                    <h1 id="warumpraxkit" class="display-4">Warum PraxKit?</h1>
 
-    <!-- Marketing Section
+
+                    <div class="card-group">
+                        <div class="card">
+
+                            <div class="card-block">
+                                <h3 class="text-center"><i class="fa fa-cog fa-spin fa-1x fa-fw"></i></h3>
+                                <h4 class="cart-title"> PraxKit kostet nur, wenn Du etwas verdienst </h4>
+                                <p class="card-text">Noch ist vieles Offen. Was wir schon wissen: PraxKit kostet dich pro Sitzung. Du bezahlst nur, wenn Du auch verdienst.
+                                </p>
+                                <p class="card-text"><small class="text-muted">Höchstens 3 CHF pro Termin.</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+
+                            <div class="card-block">
+                                <h3 class="text-center"><i class="fa fa-thumbs-o-up fa-lg "></i></h3>
+                                <h4 class="card-title"> Von Therapeutinnen für Therapeuten </h4>
+                                <p class="card-text">Praxkit wird jetzt gerade intensiv mit Psychologinnen und Therapeuten entwickelt.</p>
+                                <p class="card-text"><small class="text-muted">Melde dich unten beim Newsletter an.</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-block">
+                                <h3 class="text-center"><i class="fa fa-magic fa-lg "></i></h3>
+                                <h4 class="card-title">Termine mit Kunden abmachen oder verschieben</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, tation dignissim mel at. Epicuri expetendis consequuntur mei ut, iriure constituto vim ei. </p>
+                                <p class="card-text"><small class="text-muted">Kleingedrucktes?</small></p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-block">
+                                <h3 class="text-center"><i class="fa fa-thumbs-o-up fa-lg "></i></h3>
+                                <h4 class="card-title">Rechnungen und Zahlungseingang ganz einfach</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, tation dignissim mel at. Epicuri expetendis consequuntur mei ut, iriure constituto vim ei. His autem inimicus ea, dicit vitae iudicabit at nam. Te quis vidit altera has, ei option repudiandae
+                                    efficiantur mei.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- Kontakt
         ======================================== -->
-    <a id="features" class="anchor invisible"></a>
-    <div class='container marketing hidden-xs'>
-        <div class='row'>
-            <div class='col-md-12'>
-                <h1>Warum PraxKit?</h1>
+                    <!-- Internal Anchor with CSS to account for fixed navigation header -->
+                    <a id="kontakt " class="anchor invisible "></a>
+                    <div class="jumbotron">
+
+                        <div class="row ">
+
+                            <div class="col-sm-6 col-md-5 text-left scrollimation fade-up d1 ">
+
+                                <h1 class="display-5">Mitmachen.
+                                </h1>
+                                <h2> <span class="text-alternative "> Up-to-date bleiben.</span>
+                                </h2>
+
+                                <h4>Was wünschst Du dir als Erleichterung im Arbeitsalltag?
+                                    <br> Wir freuen uns über jegliche Anregung.
+
+                                </h4>
+
+                                <p class="lead"> Andrea und Andreas Kapp<br>
+                                </p>
+
+                            </div>
+
+                            <!--=== Contact Form ===-->
+
+                            <form id="contact-form " class="col-sm-6 col-md-offset-1 scrollimation fade-left d3 ">
+
+                                <div class="form-group ">
+                                    <label class="control-label " for="contact-name ">Name</label>
+                                    <div class="controls ">
+                                        <input id="contact-name " name="name " placeholder="Dein Name " class="form-control requiredField " data-new-placeholder="Your name " type="text " data-error-empty="Bitte geben Sie ihren Namen ein ">
+
+                                        <i class="fa fa-user "></i>
+                                    </div>
+                                </div>
+                                <!-- End name input -->
+
+                                <div class="form-group ">
+                                    <label class="control-label " for="contact-mail ">Email</label>
+                                    <div class=" controls ">
+
+                                        <input id="contact-mail " name="_replyto " placeholder="Deine Email " class="form-control requiredField " data-new-placeholder="Your email " type="email " data-error-empty="Bitte geben Sie ihre Email ein
+                " data-error-invalid="Ungültige Email Adresse ">
+                                        <i class="fa fa-envelope "></i>
+                                    </div>
+                                </div>
+                                <!-- End email input -->
+
+                                <div class="form-group ">
+                                    <label class="control-label " for="contact-mail ">Email</label>
+                                    <div class=" controls ">
+
+                                        <input id="contact-phone " name="phone " placeholder="Deine Telefonnummer " class="form-control requiredField " data-new-placeholder="Your Phone " type="text " data-error-empty="Bi tte geben Sie ihre Telefonnummer ein ">
+                                        <i class="fa fa-mobile-phone "></i>
+                                    </div>
+                                </div>
+                                <!-- End Phone input -->
+
+                                <div class="form-group ">
+                                    <label class="control-label " for="contact-message ">Message</label>
+                                    <div class="controls ">
+
+                                        <textarea id="contact-message " name="message " placeholder="Deine Nachricht " class="form-control requiredField " data-new-placeholder="Your message " rows="6 " data-error-empty="Bitte erfassen Sie ihre Nachricht "></textarea>
+                                        <i class="fa fa-comment "></i>
+                                    </div>
+                                </div>
+                                <!-- End textarea -->
+
+                                <input type="hidden " name="_next " value="http://praxkit.ch/index.html " />
+
+                                <p><button name="submit " type="submit " class="btn btn-color2 btn-block " data-error-message="Eingabefehler! " data-sending-message="Am Senden... " data-ok-message="Message geschickt "><i class="fa fa-paper-plane "></i>Nachricht abschicken</button></p>
+
+                                <input type="hidden " name="submitted " id="submitted " value="true " />
+
+                            </form>
+                            <script>
+                                var contactForm = document.querySelector('form'),
+                                    inputName = document.querySelector('[name="name "]'),
+                                    inputEmail = contactForm.querySelector('[name="_replyto "]'),
+                                    inputPhone = contactForm.querySelector('[name="phone "]'),
+                                    textAreaMessage = contactForm.querySelector('[name="message "]'),
+                                    sendButton = contactForm.querySelector('button');
+
+                                sendButton.addEventListener('click', function(event) {
+                                    event.preventDefault();
+
+                                    sendButton.innerHTML = 'sending..';
+
+                                    var xhr = new XMLHttpRequest();
+                                    xhr.open('POST', '//formspree.io/hallo@praxkit.ch', true);
+                                    xhr.setRequestHeader("Accept ", "application/json ")
+                                    xhr.setRequestHeader("Content-Type ", "application/x-www-form-urlencoded ")
+
+                                    xhr.send(
+                                        "email=" + inputEmail.value +
+                                        " &message=" + textAreaMessage.value);
+
+                                    xhr.onloadend = function(res) {
+                                        if (res.target.status === 200) {
+                                            sendButton.innerHTML = 'Message sent!';
+                                        } else {
+                                            sendButton.innerHTML = 'Error!';
+                                        }
+                                    }
+                                });
+                            </script>
+
+                            <!-- End contact-form -->
+
+                        </div>
+
+                    </div>
+
+
+                </div>
             </div>
         </div>
-        <div class='row'>
-            <div class='col-md-4'>
-                <h3><i class='fa fa-thumbs-o-up fa-lg brand5'></i> Von Therapeutinnen für Therapeuten </h3>
-                <p>
-                    Praxkit wird jetzt gerade intensiv mit Psychologinnen und Therapeuten entwickelt.
 
-                </p>
-            </div>
-            <div class='col-md-4'>
-                <h3><i class="fa fa-magic fa-lg brand5"></i> Termine mit Kunden abmachen oder verschieben</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, tation dignissim mel at. Epicuri expetendis consequuntur mei ut, iriure constituto vim ei. His autem inimicus ea, dicit vitae iudicabit at nam. Te quis vidit altera has, ei option repudiandae efficiantur mei.
-                </p>
-            </div>
-            <div class='col-md-4'>
-                <h3><i class="fa fa-tablet fa-lg brand5"></i> Rechnungen und Zahlungseingang ganz einfach</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, tation dignissim mel at. Epicuri expetendis consequuntur mei ut, iriure constituto vim ei. His autem inimicus ea, dicit vitae iudicabit at nam. Te quis vidit altera has, ei option repudiandae efficiantur mei.
-                </p>
-            </div>
-        </div>
-    </div>
-
-
-    <hr>
-    <!-- Kontakt
-        ======================================== -->
-    <!-- Internal Anchor with CSS to account for fixed navigation header -->
-    <a id="kontakt" class="anchor invisible"></a>
-    <div class="text-center jumbotron">
-
-        <div class="row">
-
-            <div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
-
-                <h1 class="big-text">Mitmachen...</h1>
-
-                <h2 class="lead">Was wünschst Du dir als Erleichterung im Arbeitsalltag?
-                    <br> Wir freuen uns über jegliche Anregung und Aufmunterung.
-
-                </h2>
-
-                <p class="text-center"> Andrea und Andreas Kapp<br>
-                </p>
-
-            </div>
-
-            <!--=== Contact Form ===-->
-
-            <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3">
-
-                <div class="form-group">
-                    <label class="control-label" for="contact-name">Name</label>
-                    <div class="controls">
-                        <input id="contact-name" name="name" placeholder="Dein Name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Bitte geben Sie ihren Namen ein">
-
-                        <i class="fa fa-user"></i>
-                    </div>
-                </div>
-                <!-- End name input -->
-
-                <div class="form-group">
-                    <label class="control-label" for="contact-mail">Email</label>
-                    <div class=" controls">
-
-                        <input id="contact-mail" name="_replyto" placeholder="Deine Email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Bitte geben Sie ihre Email ein" data-error-invalid="Ungültige Email Adresse">
-                        <i class="fa fa-envelope"></i>
-                    </div>
-                </div>
-                <!-- End email input -->
-
-                <div class="form-group">
-                    <label class="control-label" for="contact-mail">Email</label>
-                    <div class=" controls">
-
-                        <input id="contact-phone" name="phone" placeholder="Deine Telefonnummer" class="form-control requiredField" data-new-placeholder="Your Phone" type="text" data-error-empty="Bi tte geben Sie ihre Telefonnummer ein">
-                        <i class="fa fa-mobile-phone"></i>
-                    </div>
-                </div>
-                <!-- End Phone input -->
-
-                <div class="form-group">
-                    <label class="control-label" for="contact-message">Message</label>
-                    <div class="controls">
-
-                        <textarea id="contact-message" name="message" placeholder="Deine Nachricht" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Bitte erfassen Sie ihre Nachricht"></textarea>
-                        <i class="fa fa-comment"></i>
-                    </div>
-                </div>
-                <!-- End textarea -->
-
-                <input type="hidden" name="_next" value="http://praxkit.ch/index.html" />
-
-                <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Eingabefehler!" data-sending-message="Am Senden..." data-ok-message="Message geschickt"><i class="fa fa-paper-plane"></i>Nachricht abschicken</button></p>
-
-                <input type="hidden" name="submitted" id="submitted" value="true" />
-
-            </form>
-            <script>
-                var contactForm = document.querySelector('form'),
-                    inputName = document.querySelector('[name="name"]'),
-                    inputEmail = contactForm.querySelector('[name="_replyto"]'),
-                    inputPhone = contactForm.querySelector('[name="phone"]'),
-                    textAreaMessage = contactForm.querySelector('[name="message"]'),
-                    sendButton = contactForm.querySelector('button');
-
-                sendButton.addEventListener('click', function(event) {
-                    event.preventDefault();
-
-                    sendButton.innerHTML = 'sending..';
-
-                    var xhr = new XMLHttpRequest();
-                    xhr.open('POST', '//formspree.io/hallo@praxkit.ch', true);
-                    xhr.setRequestHeader("Accept", "application/json")
-                    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
-
-                    xhr.send(
-                        "email=" + inputEmail.value +
-                        "&message=" + textAreaMessage.value);
-
-                    xhr.onloadend = function(res) {
-                        if (res.target.status === 200) {
-                            sendButton.innerHTML = 'Message sent!';
-                        } else {
-                            sendButton.innerHTML = 'Error!';
-                        }
-                    }
-                });
-            </script>
-
-            <!-- End contact-form -->
-
-        </div>
-
-    </div>
 
     </div>
 
     <!-- Footer
         ======================================== -->
-    <footer class="footer">
-        <div class='container'>
-            <ul class="list-unstyled list-inline">
-                <li>
-                    <a href=""><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Blog</a>
-                </li>
-                <li>&middot;</li>
-                <li>
-                    <a href="http://twitter.com/#!/praxkit" target="_blank" class="txta txta-twitter"><i class="fa fa-twitter"></i>&nbsp;&nbsp;Twitter</a>
-                </li>
+    <div class="container-fluid footer ">
+        <div class="row">
 
-            </ul>
+            <div class="col-sm-4">
 
-            <p>
-                <small>Copyright © 2017 <i class="fa fa-star"></i> Kapp Technology GmbH, all rights reserved. | <a href="" title="Privacy Policy" onclick="_gaq.push(['_trackEvent', 'footer', 'click', 'footer_privacyPolicy']);">Privacy Policy</a> | <a href="" title="Terms of Use" onclick="_gaq.push(['_trackEvent', 'footer', 'click', 'footer_termsofUse']);">Terms of Use</a></small>
-            </p>
+                <a class="footer-logo" href="#">
+                    <img class="card-img-left" src="assets/img/praxkit-logo.png" width="100" height="100" alt="praxkit-logo">
+                </a>
+                <div id="address">
+                    <small>
+                        by Kapp Technology GmbH<br>
+                        Schützengasse 38c<br>
+                        CH 4502 Biel/Bienne<br>
+
+                        hello at praxkit.ch
+
+                    </small>
+                </div>
+            </div>
+
+
+            <div class="col-sm-8">
+
+
+                <h1 class="display-5">
+                    <ul class="list-unstyled list-inline ">
+                        <li class="list-inline-item">
+                            <a href=" "><i class="fa fa-bullhorn "></i>&nbsp;&nbsp;Blog</a>
+                        </li>
+                        <li class="list-inline-item">&middot;</li>
+                        <li class="list-inline-item">
+                            <a href="http://twitter.com/praxkit " target="_blank "><i class="fa fa-twitter "></i>&nbsp;&nbsp;Twitter</a>
+                        </li>
+
+                    </ul>
+                </h1>
+                <p>
+                    <small><a href="https://www.kapp.technology" _target="_blank">Copyright © 2017  Kapp Technology GmbH, all rights reserved.</a> </small>
+                    <small>
+                    <a href=" " title="Privacy Policy " onclick="_gaq.push([ '_trackEvent', 'footer', 'click', 'footer_privacyPolicy']);
+                ">Privacy Policy</a> &middot; <a href=" " title="Terms of Use " onclick="_gaq.push([ '_trackEvent', 'footer', 'click', 'footer_termsofUse']); ">Terms of Use</a></small>
+                    </small>
+                </p>
+            </div>
         </div>
-    </footer>
 
-    <!-- Scripts
+
+        <!-- Scripts
         ======================================== -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" type="text/javascript"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/contact.js"></script>
-    <!-- To collapse the Nav on the mobile view after a click -->
-    <script type="text/javascript">
-        $('.navbar-collapse a').click(function() {
-            if ($('nav').hasClass('in')) $('.navbar-collapse').collapse('toggle');
-        });
-    </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js "></script>
+        <script src="assets/js/app.js " type="text/javascript "></script>
+
+        <!-- To collapse the Nav on the mobile view after a click -->
+        <script type="text/javascript ">
+            $('.navbar-collapse a').click(function() {
+                if ($('nav').hasClass('in')) $('.navbar-collapse').collapse('toggle');
+            });
+        </script>
 </body>
 
 </html>
