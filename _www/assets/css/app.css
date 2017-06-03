@@ -4126,7 +4126,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 span.anchor {
   display: block;
-  height: 124px;
-  /* height of nav, in this case 124px */
+  height: 94px;
+  /* height of nav, in this case 94px */
   visibility: hidden;
   position: relative; }
