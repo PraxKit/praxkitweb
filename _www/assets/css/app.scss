@@ -5,6 +5,7 @@
     position: relative;
     background: url("../img/praxkit-tree.jpg") top center;
     background-size: cover;
+    font-family: "Lato", sans-serif;
 }
 
 #stage {
@@ -18,17 +19,87 @@
 
 #einladung {
     h1 {
-        color: darkgray;
+        color: black;
     }
     color: grey;
 }
 
+
+/* NAVBAR FIXED-TOP 
 span.anchor {
     display: block;
     height: 94px;
     /* height of nav, in this case 94px */
+
+
+/*
     visibility: hidden;
     position: relative;
+}
+*/
+
+#danila {
+    overflow: hidden;
+    position: relative;
+    background: url("../img/bg.jpg") top center;
+    background-size: cover;
+}
+
+.hero-content {
+    display: block;
+    position: relative;
+    top: 15%;
+    right: 5%;
+    width: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.hero-content h2 {
+    margin: 0 0 24px;
+    padding: 0;
+    color: darkgrey;
+    font-family: "Lato", sans-serif;
+}
+
+.hero-content p {
+    color: black;
+}
+
+#values {
+    overflow: hidden;
+    position: relative;
+    background: url("../img/praxkit-baum.jpg") top center;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+    h1 {
+        color: white;
+    }
+    span.text-alternative,
+    h3 {
+        color: chartreuse;
+    }
+    .display-4 {
+        color: yellow;
+    }
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding-bottom: 1em;
+    padding-top: 2em;
+    #address {
+        padding-left: 8em;
+    }
+}
+
+.card-img-left {
+    border-bottom-left-radius: calc(.25rem - 1px);
+    border-top-left-radius: calc(.25rem - 1px);
+    float: left;
+    padding-right: 5px;
+    margin-bottom: -1.25em;
 }
 // // Variables
 // //
