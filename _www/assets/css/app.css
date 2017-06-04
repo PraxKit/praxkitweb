@@ -4338,11 +4338,8 @@ html {
     color: chartreuse; }
 
 #einladung {
-  color: yellowgreen; }
-  #einladung h1 {
-    color: black; }
-  #einladung .display-5 {
-    color: yellow; }
+  color: #5cb85c;
+  background-color: yellow; }
 
 /* NAVBAR FIXED-TOP 
 span.anchor {
@@ -4393,10 +4390,15 @@ div.card {
   #values span.text-alternative,
   #values h3 {
     color: chartreuse; }
-  #values .display-4 {
+  #values .display-5 {
     color: yellow;
     margin-top: 1.2em;
     margin-bottom: 0.5em; }
+
+#werteschaffen {
+  background: #5cb85c;
+  margin-top: 8em;
+  margin-bottom: 6em; }
 
 .footer {
   background-color: black;

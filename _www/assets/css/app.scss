@@ -22,13 +22,8 @@ html {
 }
 
 #einladung {
-    h1 {
-        color: black;
-    }
-    color: yellowgreen;
-    .display-5 {
-        color: yellow;
-    }
+    color: #5cb85c;
+    background-color: yellow;
 }
 
 
@@ -92,11 +87,17 @@ div.card {
     h3 {
         color: chartreuse;
     }
-    .display-4 {
+    .display-5 {
         color: yellow;
         margin-top: 1.2em;
         margin-bottom: 0.5em;
     }
+}
+
+#werteschaffen {
+    background: #5cb85c;
+    margin-top: 8em;
+    margin-bottom: 6em;
 }
 
 .footer {
