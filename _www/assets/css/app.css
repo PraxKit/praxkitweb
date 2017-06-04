@@ -4321,7 +4321,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     display: none !important; } }
 
 html {
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: "Lato", sans-serif; }
 
 @media (min-width: 576px) {
   html {
@@ -4381,7 +4382,7 @@ span.anchor {
 div.card {
   background-color: yellow; }
 
-.hero-content {
+.praxis {
   display: block;
   position: relative;
   top: 15%;
@@ -4389,15 +4390,13 @@ div.card {
   width: auto;
   overflow: hidden;
   text-align: center; }
-
-.hero-content h2 {
-  margin: 0 0 24px;
-  padding: 0;
-  color: darkgrey;
-  font-family: "Lato", sans-serif; }
-
-.hero-content p {
-  color: black; }
+  .praxis h1 {
+    padding: 0;
+    color: green;
+    font-size: 2em; }
+  .praxis p {
+    color: darkslategray;
+    font-size: 1em; }
 
 #values {
   overflow: hidden;
@@ -4405,7 +4404,7 @@ div.card {
   background: url("../img/praxkit-baum.jpg") top center;
   background-size: cover;
   font-family: "Lato", sans-serif; }
-  #values h1 {
+  #values h2 {
     color: white; }
   #values span.text-alternative,
   #values h3 {

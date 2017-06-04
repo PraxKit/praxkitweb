@@ -3,6 +3,7 @@
 // Responsive Fonts
 html {
     font-size: 14px;
+    font-family: "Lato", sans-serif;
 }
 
 @include media-breakpoint-up(sm) {
@@ -83,7 +84,7 @@ div.card {
     background-color: yellow;
 }
 
-.hero-content {
+.praxis {
     display: block;
     position: relative;
     top: 15%;
@@ -91,17 +92,15 @@ div.card {
     width: auto;
     overflow: hidden;
     text-align: center;
-}
-
-.hero-content h2 {
-    margin: 0 0 24px;
-    padding: 0;
-    color: darkgrey;
-    font-family: "Lato", sans-serif;
-}
-
-.hero-content p {
-    color: black;
+    h1 {
+        padding: 0;
+        color: green;
+        font-size: 2em;
+    }
+    p {
+        color: darkslategray;
+        font-size: 1em;
+    }
 }
 
 #values {
@@ -110,7 +109,7 @@ div.card {
     background: url("../img/praxkit-baum.jpg") top center;
     background-size: cover;
     font-family: "Lato", sans-serif;
-    h1 {
+    h2 {
         color: white;
     }
     span.text-alternative,
