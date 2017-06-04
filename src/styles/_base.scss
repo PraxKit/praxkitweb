@@ -1,5 +1,31 @@
 // add your custom styles here
 // to learn more about SASS, visit sass-lang.com
+// Responsive Fonts
+html {
+    font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 16px;
+    }
+    small .small {
+        font-size: 50%;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 28px;
+    }
+}
+
 #intro {
     overflow: hidden;
     position: relative;
