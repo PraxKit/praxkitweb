@@ -4321,22 +4321,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     display: none !important; } }
 
 html {
-  font-size: 14px;
   font-family: "Lato", sans-serif; }
-
-@media (min-width: 576px) {
-  html {
-    font-size: 16px; }
-  small .small {
-    font-size: 50%; } }
-
-@media (min-width: 768px) {
-  html {
-    font-size: 20px; } }
-
-@media (min-width: 992px) {
-  html {
-    font-size: 28px; } }
 
 #intro {
   overflow: hidden;
