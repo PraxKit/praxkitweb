@@ -4420,6 +4420,9 @@ div.jumbotron {
   margin-top: 2em;
   margin-bottom: 3em; }
 
+#news {
+  background: skyblue; }
+
 /*----------------------
 ----- Contact Styles ----
 ------------------------*/
@@ -4517,7 +4520,7 @@ div.jumbotron {
 .btn-submit {
   color: black;
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 300;
   background: chartreuse;
   outline: none !important;
   border-radius: 3;
