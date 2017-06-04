@@ -4417,11 +4417,13 @@ div.jumbotron {
   background: #4baad3;
   padding-top: 3em;
   padding-bottom: 3em;
-  margin-top: 2em;
-  margin-bottom: 3em; }
+  margin-top: 8em;
+  margin-bottom: 6em; }
 
 #news {
-  background: skyblue; }
+  background: skyblue;
+  margin-top: 8em;
+  margin-bottom: 6em; }
 
 /*----------------------
 ----- Contact Styles ----
