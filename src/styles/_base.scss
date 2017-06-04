@@ -45,11 +45,12 @@ span.anchor {
 }
 */
 
-#danila {
+#praxis {
     overflow: hidden;
     position: relative;
     background: url("../img/bg.jpg") top center;
     background-size: cover;
+    height: relative;
 }
 
 #warumpraxkit {
@@ -72,11 +73,9 @@ div.card {
     h1 {
         padding: 0;
         color: green;
-        font-size: 2em;
     }
     p {
         color: darkslategray;
-        font-size: 1em;
     }
 }
 

@@ -4354,11 +4354,12 @@ span.anchor {
     position: relative;
 }
 */
-#danila {
+#praxis {
   overflow: hidden;
   position: relative;
   background: url("../img/bg.jpg") top center;
-  background-size: cover; }
+  background-size: cover;
+  height: relative; }
 
 #warumpraxkit {
   margin-top: 2em;
@@ -4377,11 +4378,9 @@ div.card {
   text-align: center; }
   .praxis h1 {
     padding: 0;
-    color: green;
-    font-size: 2em; }
+    color: green; }
   .praxis p {
-    color: darkslategray;
-    font-size: 1em; }
+    color: darkslategray; }
 
 #values {
   overflow: hidden;
