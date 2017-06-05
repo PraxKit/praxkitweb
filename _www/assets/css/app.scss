@@ -1,7 +1,16 @@
 // add your custom styles here
 // to learn more about SASS, visit sass-lang.com
-html {
-    font-family: "Lato", sans-serif;
+$brand: PraxKit;
+$brand-color: #0074BE;
+$brand-color-alt: #E2EAF2;
+$brand-background-1: hsla(0, 0%, 97%, 1.0);
+$brand-background-2: transparent !default;
+$brand-font-family: 'Roboto',
+sans-serif !default;
+body {
+    //font-family: 'Open Sans', sans-serif;
+    font-family: $brand-font-family;
+    //font-family: 'Roboto', sans-serif;
 }
 
 #intro {
@@ -497,15 +506,22 @@ div.jumbotron {
 // //
 // // Font, line-height, and color for body text, headings, and more.
 // 
-// $font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-sans-serif: -apple-system,
+system-ui,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+sans-serif !default;
 // $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 // $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-// $font-family-base:       $font-family-sans-serif !default;
+$font-family-base : $font-family-sans-serif !default;
 // 
-// $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
-// $font-size-lg:   1.25rem !default;
-// $font-size-sm:   .875rem !default;
-// $font-size-xs:   .75rem !default;
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg : 1.25rem !default;
+$font-size-sm : .875rem !default;
+$font-size-xs : .75rem !default;
 // 
 // $font-weight-normal: normal !default;
 // $font-weight-bold: bold !default;

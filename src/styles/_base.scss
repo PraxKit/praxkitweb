@@ -1,7 +1,16 @@
 // add your custom styles here
 // to learn more about SASS, visit sass-lang.com
-html {
-    font-family: "Lato", sans-serif;
+$brand: PraxKit;
+$brand-color: #0074BE;
+$brand-color-alt: #E2EAF2;
+$brand-background-1: hsla(0, 0%, 97%, 1.0);
+$brand-background-2: transparent !default;
+$brand-font-family: 'Roboto',
+sans-serif !default;
+body {
+    //font-family: 'Open Sans', sans-serif;
+    font-family: $brand-font-family;
+    //font-family: 'Roboto', sans-serif;
 }
 
 #intro {
