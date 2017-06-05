@@ -1,265 +1,282 @@
-// add your custom styles here
-// to learn more about SASS, visit sass-lang.com
-$brand: PraxKit;
-$brand-color: #0074BE;
-$brand-color-alt: #E2EAF2;
-$brand-background-1: hsla(0, 0%, 97%, 1.0);
-$brand-background-2: transparent !default;
-$brand-font-family: 'Roboto',
-sans-serif !default;
-body {
-    //font-family: 'Open Sans', sans-serif;
-    font-family: $brand-font-family;
-    //font-family: 'Roboto', sans-serif;
-}
-
-#intro {
-    overflow: hidden;
-    position: relative;
-    background: url("../img/praxkit-tree.jpg") top center;
-    background-size: cover;
-    font-family: "Lato", sans-serif;
-}
-
-#stage {
-    color: yellow;
-    margin-top: 6em;
-    margin-bottom: 7em;
-    .display-5 {
-        color: chartreuse;
+    // add your custom styles here
+    // to learn more about SASS, visit sass-lang.com
+    $brand: PraxKit;
+    $brand-color: #0074BE;
+    $brand-color-alt: #E2EAF2;
+    $brand-background-1: hsla(0, 0%, 97%, 1.0);
+    $brand-background-2: transparent !default;
+    $brand-font-family: 'Roboto',
+    sans-serif !default;
+    body {
+        //font-family: 'Open Sans', sans-serif;
+        font-family: $brand-font-family;
+        //font-family: 'Roboto', sans-serif;
     }
-}
-
-#einladung {
-    color: #5cb85c;
-    background-color: yellow;
-}
-
-
-/* NAVBAR FIXED-TOP 
+    
+    #intro {
+        overflow: hidden;
+        position: relative;
+        background: url("../img/praxkit-tree.jpg") top center;
+        background-size: cover;
+        font-family: "Lato", sans-serif;
+    }
+    
+    #stage {
+        color: yellow;
+        margin-top: 6em;
+        margin-bottom: 7em;
+        .display-5 {
+            color: chartreuse;
+        }
+    }
+    
+    #einladung {
+        color: #5cb85c;
+        background-color: yellow;
+    }
+    /* NAVBAR FIXED-TOP 
 span.anchor {
     display: block;
     height: 94px;
     /* height of nav, in this case 94px */
-
-
-/*
+    /*
     visibility: hidden;
     position: relative;
 }
 */
-
-#praxisblock {
-    overflow: hidden;
-    position: relative;
-    background: url("../img/bg.jpg") top center;
-    background-size: cover;
-    height: relative;
-}
-
-#warumpraxkit {
-    margin-top: 2em;
-    margin-bottom: 0.8em;
-}
-
-div.card {
-    background-color: yellow;
-}
-
-.praxis {
-    display: block;
-    position: relative;
-    top: 15%;
-    right: 5%;
-    width: auto;
-    overflow: hidden;
-    text-align: center;
-    h1 {
-        padding: 0;
-        color: green;
+    
+    #praxisblock {
+        overflow: hidden;
+        position: relative;
+        background: url("../img/bg.jpg") top center;
+        background-size: cover;
+        height: relative;
     }
-    p {
-        color: darkslategray;
+    
+    #warumpraxkit {
+        margin-top: 2em;
+        margin-bottom: 0.8em;
     }
-}
-
-#values {
-    overflow: hidden;
-    position: relative;
-    background: url("../img/praxkit-baum.jpg") top center;
-    background-size: cover;
-    font-family: "Lato", sans-serif;
-    h2 {
+    
+    div.card {
+        background-color: yellow;
+    }
+    
+    div.jumbotron.praxis {
+        margin-top: 7rem;
+        background: rgb(83, 119, 184);
+        /* This is for ie8 and below */
+        background: rgba(83, 119, 184, 0.8);
+        h1 {
+            padding: 0;
+            color: yellow;
+        }
+        p {
+            color: white;
+        }
+        text-align: center;
+    }
+    
+    @media (min-width: 1px) and (max-width: 575px) {
+        img#andrea.img {
+            width: inherit;
+        }
+        div.jumbotron.praxis {
+            margin-top: 0 rem;
+            margin-bottom: 1 rem;
+        }
+    }
+    /* lg */
+    
+    @media (min-width: 993px) {
+        img#andrea.img {
+            width: auto;
+        }
+    }
+    
+    img#andrea.img {
+        /* xs */
+        //height: auto;
+        //width: auto;
+        /* sm */
+        /*
+        @media (min-width: 768px) {
+            img {
+                width: inherit;
+            }
+        }
+        */
+        /* md */
+    }
+    
+    #values {
+        overflow: hidden;
+        position: relative;
+        background: url("../img/praxkit-baum.jpg") top center;
+        background-size: cover;
+        font-family: "Lato", sans-serif;
+        h2 {
+            color: white;
+        }
+        span.text-alternative,
+        h3 {
+            color: chartreuse;
+        }
+        .display-5 {
+            color: yellow;
+            margin-top: 1.2em;
+            margin-bottom: 0.5em;
+        }
+    }
+    
+    #werteschaffen {
+        background: #5cb85c;
+        margin-top: 8em;
+        margin-bottom: 6em;
+    }
+    
+    .footer {
+        background-color: black;
         color: white;
+        padding-bottom: 3em;
+        padding-top: 2em;
+        #address {
+            padding-left: 8em;
+        }
     }
-    span.text-alternative,
-    h3 {
-        color: chartreuse;
+    
+    div.jumbotron {
+        background: #4baad3;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        margin-top: 8em;
+        margin-bottom: 6em;
     }
-    .display-5 {
-        color: yellow;
-        margin-top: 1.2em;
-        margin-bottom: 0.5em;
+    
+    #news {
+        background: skyblue;
+        margin-top: 8em;
+        margin-bottom: 6em;
     }
-}
-
-#werteschaffen {
-    background: #5cb85c;
-    margin-top: 8em;
-    margin-bottom: 6em;
-}
-
-.footer {
-    background-color: black;
-    color: white;
-    padding-bottom: 3em;
-    padding-top: 2em;
-    #address {
-        padding-left: 8em;
-    }
-}
-
-.card-img-left {
-    border-bottom-left-radius: calc(.25rem - 1px);
-    border-top-left-radius: calc(.25rem - 1px);
-    float: left;
-    padding-right: 5px;
-    margin-bottom: -1.25em;
-}
-
-div.jumbotron {
-    background: #4baad3;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    margin-top: 8em;
-    margin-bottom: 6em;
-}
-
-#news {
-    background: skyblue;
-    margin-top: 8em;
-    margin-bottom: 6em;
-}
-
-// Contact Form
-
-/*----------------------
+    
+    // Contact Form
+    /*----------------------
 ----- Contact Styles ----
 ------------------------*/
-
-#contact {
-    background-repeat: no-repeat;
-    background-position: 0 100%;
-}
-
-#contact-form .form-group label {
-    display: none;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 100;
-    text-transform: uppercase;
-}
-
-#contact-form.no-placeholder .form-group label {
-    display: block;
-}
-
-#contact-form .controls {
-    padding: 0;
-    margin-bottom: 30px;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-}
-
-#contact-form .form-control {
-    background: transparent !important;
-    border: none;
-    border-bottom: 3px solid transparent;
-    border-radius: 0;
-    outline: none;
-    box-shadow: none;
-    height: 56px;
-    font-size: 21px;
-    line-height: 32px;
-    font-weight: 100;
-    padding-left: 64px;
-    -webkit-transition: border-color .3s ease-out;
-    transition: border-color .3s ease-out;
-    border-radius: 2px;
-}
-
-#contact-form .form-group {
-    position: relative;
-}
-
-#contact-form .form-group [class*=fa] {
-    display: block;
-    width: 64px;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    color: #e5e5e5;
-    font-size: 24px;
-    line-height: 53px;
-    text-align: center;
-    font-weight: 300;
-    opacity: 0.5;
-    transition: opacity .2s ease-out;
-}
-
-#contact-form.no-placeholder .form-group [class*=fa] {
-    top: 30px;
-}
-
-#contact-form .form-control:focus+[class*=fa] {
-    opacity: 1;
-}
-
-#contact-form textarea.form-control {
-    height: auto;
-    max-width: 100%;
-    min-width: 100%;
-    font-size: 21px;
-    line-height: 32px;
-    padding-top: 10px;
-}
-
-#contact-form .form-control:focus {
-    background: #fff;
-    border-bottom: 3px solid chartreuse;
-    outline: none;
-    box-shadow: none;
-    -webkit-transition: border-color .3s ease-in;
-    transition: border-color .3s ease-in;
-}
-
-#contact-form .error-message {
-    padding: 5px 0;
-    position: absolute;
-    top: -30px;
-    right: 0;
-    font-size: 14px;
-    font-weight: 300;
-    color: #ff0000;
-    z-index: 10;
-}
-
-#contact-form .error-message:before {
-    content: "\00d7";
-    font-size: 21px;
-    line-height: 21px;
-    margin-right: 5px;
-}
-
-.btn-submit {
-    color: #424949;
-    font-size: 1.5rem;
-    font-weight: 300;
-    background: chartreuse;
-    outline: none !important;
-    border-radius: 3;
-    transition: opacity .2s ease-out;
-}
+    
+    #contact {
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+    }
+    
+    #contact-form .form-group label {
+        display: none;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    
+    #contact-form.no-placeholder .form-group label {
+        display: block;
+    }
+    
+    #contact-form .controls {
+        padding: 0;
+        margin-bottom: 30px;
+        border: 1px solid #ddd;
+        border-radius: 2px;
+    }
+    
+    #contact-form .form-control {
+        background: transparent !important;
+        border: none;
+        border-bottom: 3px solid transparent;
+        border-radius: 0;
+        outline: none;
+        box-shadow: none;
+        height: 56px;
+        font-size: 21px;
+        line-height: 32px;
+        font-weight: 100;
+        padding-left: 64px;
+        -webkit-transition: border-color .3s ease-out;
+        transition: border-color .3s ease-out;
+        border-radius: 2px;
+    }
+    
+    #contact-form .form-group {
+        position: relative;
+    }
+    
+    #contact-form .form-group [class*=fa] {
+        display: block;
+        width: 64px;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        color: #e5e5e5;
+        font-size: 24px;
+        line-height: 53px;
+        text-align: center;
+        font-weight: 300;
+        opacity: 0.5;
+        transition: opacity .2s ease-out;
+    }
+    
+    #contact-form.no-placeholder .form-group [class*=fa] {
+        top: 30px;
+    }
+    
+    #contact-form .form-control:focus+[class*=fa] {
+        opacity: 1;
+    }
+    
+    #contact-form textarea.form-control {
+        height: auto;
+        max-width: 100%;
+        min-width: 100%;
+        font-size: 21px;
+        line-height: 32px;
+        padding-top: 10px;
+    }
+    
+    #contact-form .form-control:focus {
+        background: #fff;
+        border-bottom: 3px solid chartreuse;
+        outline: none;
+        box-shadow: none;
+        -webkit-transition: border-color .3s ease-in;
+        transition: border-color .3s ease-in;
+    }
+    
+    #contact-form .error-message {
+        padding: 5px 0;
+        position: absolute;
+        top: -30px;
+        right: 0;
+        font-size: 14px;
+        font-weight: 300;
+        color: #ff0000;
+        z-index: 10;
+    }
+    
+    #contact-form .error-message:before {
+        content: "\00d7";
+        font-size: 21px;
+        line-height: 21px;
+        margin-right: 5px;
+    }
+    
+    .btn-submit {
+        color: #424949;
+        font-size: 1.5rem;
+        font-weight: 300;
+        background: chartreuse;
+        outline: none !important;
+        border-radius: 3;
+        transition: opacity .2s ease-out;
+    }
 // // Variables
 // //
 // // Copy settings from this file into the provided `_custom.scss` to override

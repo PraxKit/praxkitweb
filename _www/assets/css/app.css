@@ -4365,19 +4365,41 @@ span.anchor {
 div.card {
   background-color: yellow; }
 
-.praxis {
-  display: block;
-  position: relative;
-  top: 15%;
-  right: 5%;
-  width: auto;
-  overflow: hidden;
+div.jumbotron.praxis {
+  margin-top: 7rem;
+  background: #5377b8;
+  /* This is for ie8 and below */
+  background: rgba(83, 119, 184, 0.8);
   text-align: center; }
-  .praxis h1 {
+  div.jumbotron.praxis h1 {
     padding: 0;
-    color: green; }
-  .praxis p {
-    color: darkslategray; }
+    color: yellow; }
+  div.jumbotron.praxis p {
+    color: white; }
+
+@media (min-width: 1px) and (max-width: 575px) {
+  img#andrea.img {
+    width: inherit; }
+  div.jumbotron.praxis {
+    margin-top: 0 rem;
+    margin-bottom: 1 rem; } }
+
+/* lg */
+@media (min-width: 993px) {
+  img#andrea.img {
+    width: auto; } }
+
+img#andrea.img {
+  /* xs */
+  /* sm */
+  /*
+        @media (min-width: 768px) {
+            img {
+                width: inherit;
+            }
+        }
+        */
+  /* md */ }
 
 #values {
   overflow: hidden;
@@ -4407,13 +4429,6 @@ div.card {
   padding-top: 2em; }
   .footer #address {
     padding-left: 8em; }
-
-.card-img-left {
-  border-bottom-left-radius: calc(.25rem - 1px);
-  border-top-left-radius: calc(.25rem - 1px);
-  float: left;
-  padding-right: 5px;
-  margin-bottom: -1.25em; }
 
 div.jumbotron {
   background: #4baad3;
