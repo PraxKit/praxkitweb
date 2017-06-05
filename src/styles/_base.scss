@@ -79,7 +79,7 @@ span.anchor {
     
     @media (min-width: 1px) and (max-width: 575px) {
         img#andrea.img {
-            width: inherit;
+            width: 550px;
         }
         div.jumbotron.praxis {
             margin-top: 0 rem;
@@ -157,6 +157,19 @@ span.anchor {
         background: skyblue;
         margin-top: 8em;
         margin-bottom: 6em;
+    }
+    
+    // Footer
+    .card-img-left {
+        border-bottom-left-radius: calc(.25rem - 1px);
+        border-top-left-radius: calc(.25rem - 1px);
+        float: left;
+        padding-right: 5px;
+        margin-bottom: -1.25em;
+    }
+    
+    .footer {
+        font-size: 80%
     }
     
     // Contact Form

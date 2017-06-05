@@ -117,8 +117,7 @@
 
     <!-- Intro
         ======================================== -->
-    <span class="anchor" id="intro"></span>
-    <a id="intro" class="anchor invisible"></a>
+
     <div id="intro" class="container-fluid">
         <div id="stage">
             <div id="stage-caption">
@@ -142,7 +141,7 @@
                         <p class="lead">
                             Bist Du selbstständig tätig oder möchtest es in Zukunft werden? Suchst Du auch nach einer <em>einfachen Lösung</em> für deine Administration?
                         </p>
-                        <p class="lead"> PraxKit soll Spass machen. Den Aufwand für die Rechnungstellung minimieren. Vom Termin vereinbaren bis zur Rechnungsstellung und zum Zahlungseingang. </p>
+                        <p class="lead"> PraxKit soll Spass machen. Den Aufwand für die Rechnungstellung minimieren. Vom Termin vereinbaren bis zur Rechnungsstellung und zum Zahlungseingang.
                         </p>
                         <p class="lead">
                             Sobald wir PraxKit fertig haben und es getestet ist, schicken wir dir ein Mail. Wenn Du Ideen hast und diese einbringen willst, melde dich doch bei uns.
@@ -185,7 +184,7 @@
                     </p>
                     <p>
                         <br>
-                        <a class="btn btn-primary btn-lg btn-success" href="#profile">Mehr erfahren <i class="fa fa-chevron-right"></i></a>
+                        <a class="btn btn-primary btn-lg btn-success" href="#news">Mehr erfahren <i class="fa fa-chevron-right"></i></a>
                     </p>
                 </div>
             </div>
@@ -217,7 +216,8 @@
             <div class="container-fluid">
 
                 <div class="row">
-                    <div class="col-sm-4"> </div>
+                    <div class="col-sm-4">
+                    </div>
                     <div class="col-sm-8">
 
                         <div class="jumbotron">
@@ -291,12 +291,12 @@
                                     <!--  ======================================== -->
                                     <!--=== Newsletter Form ===-->
                                     <div id="newsletter">
-                                        <form id="contact-form" class="form-horizontal">
+                                        <form id="nl-form" class="form-horizontal">
 
                                             <div class="form-group">
-                                                <label class="control-label" for="contact-name">Name</label>
+                                                <label class="control-label" for="nl-name">Name</label>
                                                 <div class="controls">
-                                                    <input id="contact-name" name="name" placeholder="Name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Bitte gibt deinen Namen ein">
+                                                    <input id="nl-name" name="name" placeholder="Name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Bitte gibt deinen Namen ein">
 
                                                     <i class="fa fa-user"></i>
                                                 </div>
@@ -304,10 +304,10 @@
                                             <!-- End name input -->
 
                                             <div class="form-group">
-                                                <label class="control-label" for="contact-mail">Email</label>
+                                                <label class="control-label" for="nl-mail">Email</label>
                                                 <div class=" controls">
 
-                                                    <input id="contact-mail" name="_replyto" placeholder="Email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Bitte gib deine Email ein" data-error-invalid="Ungültige Email Adresse">
+                                                    <input id="nl-mail" name="_replyto" placeholder="Email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Bitte gib deine Email ein" data-error-invalid="Ungültige Email Adresse">
                                                     <i class="fa fa-envelope"></i>
                                                 </div>
                                             </div>
@@ -317,7 +317,7 @@
 
                                             <p><button name="submit" type="submit" class="btn btn-submit btn-block" data-error-message="Eingabefehler!" data-sending-message="Am Senden..." data-ok-message="Message geschickt"><i class="fa fa-paper-plane-o"></i> Anmelden</button></p>
 
-                                            <input type="hidden" name="submitted" id="submitted" value="true" />
+                                            <input type="hidden" name="submitted" id="nl-submitted" value="true" />
 
                                         </form>
                                     </div>
@@ -412,6 +412,7 @@
 
                         </div>
                     </div>
+                    <!-- col-sm-8 -->
 
                 </div>
             </div>
@@ -431,38 +432,41 @@
                     <img class="card-img-left" src="assets/img/praxkit-logo.png" width="100" height="100" alt="praxkit-logo">
                 </a>
                 <div id="address">
-                    <small>
+                    <address>
                         by Kapp Technology GmbH<br>
                         Schützengasse 38c<br>
                         CH 2502 Biel/Bienne<br>
                         hello at praxkit.ch
 
-                    </small>
+                    </address>
                 </div>
             </div>
 
 
             <div class="col-sm-8">
                 <div class="footer-notes">
-                    <p><small>
 
-                        <ul class="list-unstyled list-inline">
-                            <li class="list-inline-item">
-                                <a href=""><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Blog</a>
-                            </li>
-                            <li class="list-inline-item">&middot;</li>
-                            <li class="list-inline-item">
-                                <a href="http://twitter.com/praxkit" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;Twitter</a>
-                            </li>
-                            <li class="list-inline-item">  <a href="" title="Privacy Policy" onclick="_gaq.push([ '_trackEvent', 'footer', 'click', 'footer_privacyPolicy']);">Privacy Policy</a> </li>
-                <li class="list-inline-item"> &middot;</li>
-                <li class="list-inline-item"> <a href="" title="Terms of Use" onclick="_gaq.push([ '_trackEvent', 'footer', 'click', 'footer_termsofUse']);">Terms of Use</a></small></li>
-                        <li>
-                            <a href="https://www.kapp.technology" _target="_blank"><small> © 2017  Kapp Technology GmbH, all rights reserved.</small></a>
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href=""><i class="fa fa-bullhorn"></i>&nbsp;&nbsp;Blog</a>
                         </li>
-                        </ul>
-                        </small>
-                    </p>
+                        <li class="list-inline-item">&middot;</li>
+                        <li class="list-inline-item">
+                            <a href="http://twitter.com/praxkit" target="_blank"><i class="fa fa-twitter"></i>&nbsp;&nbsp;Twitter</a>
+                        </li>
+                        <li class="list-inline-item"> <a href="" title="Privacy Policy" onclick="_gaq.push([ '_trackEvent', 'footer', 'click', 'footer_privacyPolicy']);">Privacy Policy</a> </li>
+                        <li class="list-inline-item"> &middot;</li>
+                        <li class="list-inline-item"> <a href="" title="Terms of Use" onclick="_gaq.push([ '_trackEvent', 'footer', 'click', 'footer_termsofUse']);">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="https://www.kapp.technology" _target="_blank"> © 2017  Kapp Technology GmbH, all rights reserved.</a>
+                        </li>
+                        <li>
+                            Vielen Dank für deinen Besuch. Bis bald!
+                        </li>
+
+                    </ul>
+
                 </div>
             </div>
         </div>
