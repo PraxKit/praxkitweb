@@ -4389,18 +4389,6 @@ div.jumbotron.praxis {
   img#andrea.img {
     width: auto; } }
 
-img#andrea.img {
-  /* xs */
-  /* sm */
-  /*
-        @media (min-width: 768px) {
-            img {
-                width: inherit;
-            }
-        }
-        */
-  /* md */ }
-
 #values {
   overflow: hidden;
   position: relative;
@@ -4424,11 +4412,15 @@ img#andrea.img {
 
 .footer {
   background-color: black;
-  color: white;
+  font-size: 0.8rem;
+  color: darkgrey;
   padding-bottom: 3em;
   padding-top: 2em; }
   .footer #address {
     padding-left: 8em; }
+
+#footernotes {
+  margin-top: 25px; }
 
 div.jumbotron {
   background: #4baad3;
@@ -4448,9 +4440,6 @@ div.jumbotron {
   float: left;
   padding-right: 5px;
   margin-bottom: -1.25em; }
-
-.footer {
-  font-size: 80%; }
 
 /*----------------------
 ----- Contact Styles ----
