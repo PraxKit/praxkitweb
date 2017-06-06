@@ -202,15 +202,9 @@
 // // Define the minimum dimensions at which your layout will change,
 // // adapting to different screen sizes, for use in media queries.
 // 
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 576px,
-//   md: 768px,
-//   lg: 992px,
-//   xl: 1200px
-// ) !default;
-// @include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
-// @include _assert-starts-at-zero($grid-breakpoints);
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px) !default;
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
 // 
 // 
 // // Grid containers
@@ -254,12 +248,12 @@ Arial,
 sans-serif !default;
 // $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 // $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base : $font-family-sans-serif !default;
+$font-family-base: $font-family-sans-serif !default;
 // 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
-$font-size-lg : 1.25rem !default;
-$font-size-sm : .875rem !default;
-$font-size-xs : .75rem !default;
+$font-size-lg: 1.25rem !default;
+$font-size-sm: .875rem !default;
+$font-size-xs: .75rem !default;
 // 
 // $font-weight-normal: normal !default;
 // $font-weight-bold: bold !default;
