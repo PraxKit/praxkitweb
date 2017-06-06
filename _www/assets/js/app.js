@@ -13862,7 +13862,7 @@ $(document).ready(function() {
 
         $('#contact-form .error-message').remove();
 
-        $('.requiredField').each(function() {
+        $('.contact-requiredField').each(function() {
             if ($.trim($(this).val()) == '') {
                 var errorText = $(this).data('error-empty');
                 $(this).parent().append('<span class="error-message" style="display:none;">' + errorText + '.</span>').find('.error-message').fadeIn('fast');

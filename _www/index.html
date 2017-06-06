@@ -356,12 +356,12 @@
                                 <div class="col-sm-6 col-md5 text-left">
                                     <!--=== Contact Form ===-->
                                     <div id="contact" class="contact">
-                                        <form id="contact-form" class="form-horizontal contact-form">
+                                        <form id="contact-form" class="form-horizontal contact-form" action="http://formspree.io/hallo@praxkit.ch" method="post" novalidate>
 
                                             <div class="form-group">
                                                 <label class="control-label" for="contact-name">Name</label>
                                                 <div class="controls">
-                                                    <input id="contact-name" name="name" placeholder="Name" class="form-control requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Bitte geben Sie ihren Namen ein">
+                                                    <input id="contact-name" name="name" placeholder="Name" class="form-control contact-requiredField" data-new-placeholder="Your name" type="text" data-error-empty="Bitte geben Sie ihren Namen ein">
 
                                                     <i class="fa fa-user"></i>
                                                 </div>
@@ -372,7 +372,7 @@
                                                 <label class="control-label" for="contact-mail">Email</label>
                                                 <div class=" controls">
 
-                                                    <input id="contact-mail" name="_replyto" placeholder="Email" class="form-control requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Bitte geben Sie ihre Email ein" data-error-invalid="Ungültige Email Adresse">
+                                                    <input id="contact-mail" name="_replyto" placeholder="Email" class="form-control contact-requiredField" data-new-placeholder="Your email" type="email" data-error-empty="Bitte geben Sie ihre Email ein" data-error-invalid="Ungültige Email Adresse">
                                                     <i class="fa fa-envelope"></i>
                                                 </div>
                                             </div>
@@ -382,7 +382,7 @@
                                                 <label class="control-label" for="contact-mail">Telefon</label>
                                                 <div class=" controls">
 
-                                                    <input id="contact-phone" name="phone" placeholder="Telefonnummer" class="form-control requiredField" data-new-placeholder="Your Phone" type="text" data-error-empty="Bitte geben Sie ihre Telefonnummer ein">
+                                                    <input id="contact-phone" name="phone" placeholder="Telefonnummer" class="form-control contact-requiredField" data-new-placeholder="Your Phone" type="text" data-error-empty="Bitte geben Sie ihre Telefonnummer ein">
                                                     <i class="fa fa-mobile-phone"></i>
                                                 </div>
                                             </div>
@@ -392,13 +392,13 @@
                                                 <label class="control-label" for="contact-message">Message</label>
                                                 <div class="controls">
 
-                                                    <textarea id="contact-message" name="message" placeholder="Nachricht" class="form-control requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Bitte erfassen Sie ihre Nachricht"></textarea>
+                                                    <textarea id="contact-message" name="message" placeholder="Nachricht" class="form-control contact-requiredField" data-new-placeholder="Your message" rows="6" data-error-empty="Bitte erfassen Sie ihre Nachricht"></textarea>
                                                     <i class="fa fa-comment"></i>
                                                 </div>
                                             </div>
                                             <!-- End textarea -->
 
-                                            <input type="hidden" name="_next" value="http://praxkit.ch/index.html" />
+                                            <input type="hidden" name="_next" value="https://www.praxkit.ch/index.html" />
 
                                             <p><button name="submit" type="submit" class="btn btn-submit btn-block" data-error-message="Eingabefehler!" data-sending-message="Am Senden..." data-ok-message="Message geschickt"><i class="fa fa-paper-plane-o"></i> Abschicken</button></p>
 
