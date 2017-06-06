@@ -489,28 +489,17 @@ $grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px) !defaul
 // //
 // // Define the maximum width of `.container` for different screen sizes.
 // 
-// $container-max-widths: (
-//   sm: 540px,
-//   md: 720px,
-//   lg: 960px,
-//   xl: 1140px
-// ) !default;
-// @include _assert-ascending($container-max-widths, "$container-max-widths");
+$container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px) !default;
+@include _assert-ascending($container-max-widths, "$container-max-widths");
 // 
 // 
 // // Grid columns
 // //
 // // Set the number of columns and specify the width of the gutters.
 // 
-// $grid-columns:               12 !default;
-// $grid-gutter-width-base:     30px !default;
-// $grid-gutter-widths: (
-//   xs: $grid-gutter-width-base,
-//   sm: $grid-gutter-width-base,
-//   md: $grid-gutter-width-base,
-//   lg: $grid-gutter-width-base,
-//   xl: $grid-gutter-width-base
-// ) !default;
+$grid-columns : 12 !default;
+$grid-gutter-width-base : 30px !default;
+$grid-gutter-widths: ( xs: $grid-gutter-width-base, sm: $grid-gutter-width-base, md: $grid-gutter-width-base, lg: $grid-gutter-width-base, xl: $grid-gutter-width-base) !default;
 // 
 // // Fonts
 // //
@@ -533,44 +522,44 @@ $font-size-lg: 1.25rem !default;
 $font-size-sm: .875rem !default;
 $font-size-xs: .75rem !default;
 // 
-// $font-weight-normal: normal !default;
-// $font-weight-bold: bold !default;
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
 // 
-// $font-weight-base: $font-weight-normal !default;
-// $line-height-base: 1.5 !default;
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
 // 
-// $font-size-h1: 2.5rem !default;
-// $font-size-h2: 2rem !default;
-// $font-size-h3: 1.75rem !default;
-// $font-size-h4: 1.5rem !default;
-// $font-size-h5: 1.25rem !default;
-// $font-size-h6: 1rem !default;
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.75rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1.25rem !default;
+$font-size-h6: 1rem !default;
 // 
-// $headings-margin-bottom: ($spacer / 2) !default;
-// $headings-font-family:   inherit !default;
-// $headings-font-weight:   500 !default;
-// $headings-line-height:   1.1 !default;
-// $headings-color:         inherit !default;
+$headings-margin-bottom: ($spacer / 2) !default;
+$headings-font-family : inherit !default;
+$headings-font-weight : 500 !default;
+$headings-line-height : 1.1 !default;
+$headings-color : inherit !default;
 // 
-// $display1-size: 6rem !default;
-// $display2-size: 5.5rem !default;
-// $display3-size: 4.5rem !default;
-// $display4-size: 3.5rem !default;
+$display1-size: 6rem !default;
+$display2-size: 5.5rem !default;
+$display3-size: 4.5rem !default;
+$display4-size: 3.5rem !default;
 // 
-// $display1-weight:     300 !default;
-// $display2-weight:     300 !default;
-// $display3-weight:     300 !default;
-// $display4-weight:     300 !default;
-// $display-line-height: $headings-line-height !default;
+$display1-weight : 300 !default;
+$display2-weight : 300 !default;
+$display3-weight : 300 !default;
+$display4-weight : 300 !default;
+$display-line-height: $headings-line-height !default;
 // 
-// $lead-font-size:   1.25rem !default;
-// $lead-font-weight: 300 !default;
+$lead-font-size : 1.25rem !default;
+$lead-font-weight: 300 !default;
 // 
-// $small-font-size: 80% !default;
+$small-font-size: 80% !default;
 // 
-// $text-muted: $gray-light !default;
+$text-muted: $gray-light !default;
 // 
-// $abbr-border-color: $gray-light !default;
+$abbr-border-color: $gray-light !default;
 // 
 // $blockquote-small-color:  $gray-light !default;
 // $blockquote-font-size:    ($font-size-base * 1.25) !default;
