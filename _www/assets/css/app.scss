@@ -163,12 +163,12 @@ span.anchor {
 ----- Contact Styles ----
 ------------------------*/
     
-    #contact {
+    .contact {
         background-repeat: no-repeat;
         background-position: 0 100%;
     }
     
-    #contact-form .form-group label {
+    .contact-form .form-group label {
         display: none;
         font-size: 18px;
         line-height: 24px;
@@ -176,18 +176,18 @@ span.anchor {
         text-transform: uppercase;
     }
     
-    #contact-form.no-placeholder .form-group label {
+    .contact-form.no-placeholder .form-group label {
         display: block;
     }
     
-    #contact-form .controls {
+    .contact-form .controls {
         padding: 0;
         margin-bottom: 30px;
         border: 1px solid #ddd;
         border-radius: 2px;
     }
     
-    #contact-form .form-control {
+    .contact-form .form-control {
         background: transparent !important;
         border: none;
         border-bottom: 3px solid transparent;
@@ -204,11 +204,11 @@ span.anchor {
         border-radius: 2px;
     }
     
-    #contact-form .form-group {
+    .contact-form .form-group {
         position: relative;
     }
     
-    #contact-form .form-group [class*=fa] {
+    .contact-form .form-group [class*=fa] {
         display: block;
         width: 64px;
         position: absolute;
@@ -223,15 +223,15 @@ span.anchor {
         transition: opacity .2s ease-out;
     }
     
-    #contact-form.no-placeholder .form-group [class*=fa] {
+    .contact-form.no-placeholder .form-group [class*=fa] {
         top: 30px;
     }
     
-    #contact-form .form-control:focus+[class*=fa] {
+    .contact-form .form-control:focus+[class*=fa] {
         opacity: 1;
     }
     
-    #contact-form textarea.form-control {
+    .contact-form textarea.form-control {
         height: auto;
         max-width: 100%;
         min-width: 100%;
@@ -240,7 +240,7 @@ span.anchor {
         padding-top: 10px;
     }
     
-    #contact-form .form-control:focus {
+    .contact-form .form-control:focus {
         background: #fff;
         border-bottom: 3px solid chartreuse;
         outline: none;
@@ -249,7 +249,7 @@ span.anchor {
         transition: border-color .3s ease-in;
     }
     
-    #contact-form .error-message {
+    .contact-form .error-message {
         padding: 5px 0;
         position: absolute;
         top: -30px;
@@ -260,7 +260,7 @@ span.anchor {
         z-index: 10;
     }
     
-    #contact-form .error-message:before {
+    .contact-form .error-message:before {
         content: "\00d7";
         font-size: 21px;
         line-height: 21px;
