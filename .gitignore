@@ -1,1 +1,3 @@
 target/
+ftp_env.sh
+node_modules/
