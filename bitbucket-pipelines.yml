@@ -8,11 +8,11 @@ image: ruby:2.4.1
 pipelines:
   default:
     - step:
-     caches:
-       - bundler
-    script: # Modify the commands below to build your repository.
-      - bundle install
-      - rake deploy
+        caches:
+          - bundler
+        script: # Modify the commands below to build your repository.
+          - bundle install
+          - rake deploy
 
 definitions:
   caches:
