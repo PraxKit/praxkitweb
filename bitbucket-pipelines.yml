@@ -14,6 +14,6 @@ pipelines:
           - bundle install
           - rake deploy
 
-definitions:
-  caches:
-    bundler: vendor/bundle
+#definitions:
+#  caches:
+#    bundler: vendor/bundle
