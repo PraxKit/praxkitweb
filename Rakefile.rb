@@ -1,7 +1,7 @@
 task default: %w[build]
 
 task :deploy do
-  `bundle show bootstrap`
+ sh "bundle show bootstrap"
   puts "Starting Build."
   ruby "push_files.rb"
   puts "Build done."
