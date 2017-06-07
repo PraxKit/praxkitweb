@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-    //Newsletter
+    //Newsletter deaktiviert temporär
+    /*
     $('#nl-form').submit(function() {
 
         var buttonCopy = $('#nl-form button').html(),
@@ -55,6 +56,8 @@ $(document).ready(function() {
 
         return false;
     });
+
+    */
 
 
 
