@@ -1,5 +1,8 @@
 # PraxKit Web
 
+Build css with gulp
+build website with jekyll
+
 Setup
 
         brew install rvm
