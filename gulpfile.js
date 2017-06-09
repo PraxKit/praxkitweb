@@ -14,7 +14,8 @@ var v = {
     dest: '_www/assets/css',
     appmin: 'app.min.css',
     srcjs: 'src/js',
-    destjs: '_www/assets/js'
+    destjs: '_www/assets/js',
+    apptarget: 'src/css'
 };
 
 gulp.task('sass', function() {
@@ -23,7 +24,8 @@ gulp.task('sass', function() {
         .pipe(gulp.dest(v.dest))
         .pipe(rename(v.app + '.min.css'))
         .pipe(minify())
-        .pipe(gulp.dest(v.dest));
+        .pipe(gulp.dest(v.dest))
+        .pipe(gulp.dest(v.apptarget));
 });
 
 gulp.task('combine', function() {

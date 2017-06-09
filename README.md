@@ -23,10 +23,13 @@ Build website
 
         bundle exec jekyll serve --watch --incremental
 
+
+This is how we do it
+
         bundle exec jekyll serve --watch  --source src --destination target
 
-
         bundle exec jekyll build --source src --destination target 
+        
 
 
 See [this post](https://stackoverflow.com/documentation/twitter-bootstrap/9090/migrating-to-bootstrap-4/28674/bootstrap-4-navbar#t=201703020350421197321) for Bootstap 4 migration.
