@@ -123,6 +123,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-
+ 
 source:      src
 destination: target
