@@ -357,9 +357,9 @@
                                         Aktuell
                                     </h1>
                                     {% for post in site.posts %} {% if post.categories contains 'aktuell' %}
-                                    <h1>
-                                        <a class="lead" href="{{ post.url | prepend: site.baseurl }}"><span class="text-alternative">{{ post.title }}</span></a>
-                                    </h1>
+                                    
+                                        <a class="lead" href="{{ post.url | prepend: site.baseurl }}"><h2><span class="text-alternative">{{ post.title }}</span></h2></a>
+                                    
 
                                     <p class="lead">
                                         {{ post.content | markdownify }}
