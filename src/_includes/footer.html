@@ -41,7 +41,24 @@
                         <a href="https://www.kapp.technology" target="_blank"> © 2017  Kapp Technology GmbH, all rights reserved.</a>
                     </li>
 
-                    <li>Vielen Dank für deinen Besuch. Bis bald!</li>
+                    <li>Vielen Dank für deinen Besuch. Bis bald! &#8212; Aktualisierung: {% assign m = site.time | date: "%-m" %}
+									{{ site.time | date: "%-d" }}.
+									{% case m %}
+									{% when '1' %}Januar
+									{% when '2' %}Februar
+									{% when '3' %}März
+									{% when '4' %}April
+									{% when '5' %}Mai
+									{% when '6' %}Juni
+									{% when '7' %}Juli
+									{% when '8' %}August
+									{% when '9' %}September
+									{% when '10' %}Oktober
+									{% when '11' %}November
+									{% when '12' %}Dezember
+									{% endcase %}
+									{{ site.time | date: "%Y" }}
+					</li>
                 </ul>
             </div>
         </div>
