@@ -4786,14 +4786,14 @@ body {
 
 #blog-title {
   color: yellow;
-  margin-top: 6em;
-  margin-bottom: 7em;
+  margin-top: 3em;
+  margin-bottom: 4em;
   display: block; }
 
 #blog {
   background: skyblue;
-  margin-top: 6em;
-  margin-bottom: 7em;
+  margin-top: 3em;
+  margin-bottom: 4em;
   display: block; }
   #blog .display-1 {
     color: yellow;
