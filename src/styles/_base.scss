@@ -29,7 +29,40 @@
             color: chartreuse;
         }
     }
-    
+
+    #blog-title {
+        color: yellow;
+        margin-top: 6em;
+        margin-bottom: 7em;
+        display:block;
+    }
+
+      #blog {
+        background: skyblue;
+        margin-top: 6em;
+        margin-bottom: 7em;
+        display:block;
+        .display-1 {
+            color: yellow;
+            margin-top: 4rem;
+            margin-bottom: 3rem;
+        }
+        .display-5 {
+            color: yellow;
+        }
+        h1 {
+            color: yellow;
+        }
+        .post-meta {
+            color: chartreuse;
+        }
+        p {
+            color: black;
+        }
+        
+        
+    }
+
     #einladung {
         color: #5cb85c;
         background-color: yellow;

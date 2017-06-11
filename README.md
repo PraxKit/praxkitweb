@@ -26,9 +26,9 @@ Build website
 
 This is how we do it
 
-        bundle exec jekyll serve --watch  --source src --destination target
+        bundle exec jekyll serve --watch --source src
 
-        bundle exec jekyll build --source src --destination target 
+        bundle exec jekyll build --source src  
         
 
 

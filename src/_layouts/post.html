@@ -6,14 +6,18 @@ layout: default
 {% if minutes == 0 %}
 {% assign minutes = 1 %}
 {% endif %}
+<div id="blog" class="jumbotron">
 
-<div class="post-header mb2">
+  
+
+
+  <div class="post-header">
   <h1>{{ page.title }}</h1>
   <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
   {% if page.update_date %}
     <span class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
   {% endif %}
-  <span class="post-meta small">
+  <span class="post-meta">
   {% if page.minutes %}
     {{ page.minutes }} {{ site.text.post.minute_read }}
   {% else %}
@@ -21,7 +25,7 @@ layout: default
   {% endif %}
   </span>
 </div>
-
+<br>
 <article class="post-content">
   {{ content }}
 </article>
@@ -45,3 +49,4 @@ layout: default
     </div>
   {% endfor %}
 {% endif %}
+</div>

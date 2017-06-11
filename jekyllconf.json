@@ -188,10 +188,6 @@
     "share_stumbleupon": false,
     "share_hackernews": false,
     "text": {
-        "pagination": {
-            "newer": "Newer",
-            "older": "Older"
-        },
         "share_buttons": {
             "text": "Share this post!",
             "facebook": "Share on Facebook",
