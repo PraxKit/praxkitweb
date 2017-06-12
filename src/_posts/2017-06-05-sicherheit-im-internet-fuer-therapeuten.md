@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      Sicherheit im Internet für Therapeuten
-date:       2017-06-10
+date:       2017-06-05
 summary:    Bald gibt es hier mehr...
 categories: tech
 ---
