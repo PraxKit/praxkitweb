@@ -16,7 +16,7 @@ Setup
 
 Use `gulp` to build assets.
 
-Use `rake deploy`to deploy.
+Use `rake deploy`to deploy. Thanks to [jekyll-rake](https://github.com/avillafiorita/jekyll-rakefile).
 
 
 Build website

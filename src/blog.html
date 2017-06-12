@@ -17,7 +17,7 @@ layout: default
 											 {{ post.title }}
 										</a>
         </h1>
-        <p> {{ post.content | strip_html | truncatewords: 35 }} <br><br>
+        <p> {{ post.content | markdownify | truncatewords: 30 }} <br><br>
           <a href="{{ post.url | prepend: site.baseurl }} " class="btn btn-sm btn-primary "> Weiter <i class="fa fa-chevron-right "></i></a>
         </p>
         </div>
