@@ -7,10 +7,12 @@ categories: aktuell
 ---
  Am 4. Mai haben wir PraxKit zum ersten mal unser Familie präsentiert. Genauer, das Logo und die Bildwelt auf Twitter: [https://twitter.com/praxkit](https://twitter.com/praxkit).
 
+## Yeah!
 ### Yeah!
+#### Yeah!
 
-Heute freuen wir uns nach ein paar Wochen der Creation und Exploration, dass unser Webauftritt Live geht. In einer ersten Version. Es fehlen noch ein paar Dinge. Diese fügen wir dann heimlich hinzu.
+Unser Webauftritt geht Live. Nach Wochen der Creation, Texterei und Exploration. In einer ersten Version mal. Es fehlen noch ein paar Dinge. Diese fügen wir dann heimlich hinzu.
 
-Wir freuen uns auf Feedback und euren Eintrag in den Newlsetter.
+Wir freuen uns auf Feedback und euren Eintrag in den [Newlsetter](https://praxkit.ch/#news).
 
 Herzlich, Andrea und Andreas Kapp

@@ -4803,6 +4803,12 @@ body {
     color: yellow; }
   #blog h1 {
     color: yellow; }
+  #blog h2 {
+    color: white; }
+  #blog h3 {
+    color: chartreuse; }
+  #blog h4 {
+    color: black; }
   #blog .post-meta {
     color: chartreuse; }
   #blog p {
