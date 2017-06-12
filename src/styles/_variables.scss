@@ -219,8 +219,8 @@ $container-max-widths: ( sm: 540px, md: 720px, lg: 960px, xl: 1140px) !default;
 // //
 // // Set the number of columns and specify the width of the gutters.
 // 
-$grid-columns : 12 !default;
-$grid-gutter-width-base : 30px !default;
+$grid-columns: 12 !default;
+$grid-gutter-width-base: 30px !default;
 $grid-gutter-widths: ( xs: $grid-gutter-width-base, sm: $grid-gutter-width-base, md: $grid-gutter-width-base, lg: $grid-gutter-width-base, xl: $grid-gutter-width-base) !default;
 // 
 // // Fonts
@@ -258,23 +258,23 @@ $font-size-h5: 1.25rem !default;
 $font-size-h6: 1rem !default;
 // 
 $headings-margin-bottom: ($spacer / 2) !default;
-$headings-font-family : inherit !default;
-$headings-font-weight : 500 !default;
-$headings-line-height : 1.1 !default;
-$headings-color : inherit !default;
+$headings-font-family: inherit !default;
+$headings-font-weight: 500 !default;
+$headings-line-height: 1.1 !default;
+$headings-color: inherit !default;
 // 
 $display1-size: 6rem !default;
 $display2-size: 5.5rem !default;
 $display3-size: 4.5rem !default;
 $display4-size: 3.5rem !default;
 // 
-$display1-weight : 300 !default;
-$display2-weight : 300 !default;
-$display3-weight : 300 !default;
-$display4-weight : 300 !default;
+$display1-weight: 300 !default;
+$display2-weight: 300 !default;
+$display3-weight: 300 !default;
+$display4-weight: 300 !default;
 $display-line-height: $headings-line-height !default;
 // 
-$lead-font-size : 1.25rem !default;
+$lead-font-size: 1.25rem !default;
 $lead-font-weight: 300 !default;
 // 
 $small-font-size: 80% !default;

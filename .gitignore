@@ -3,3 +3,4 @@ ftp_env.sh
 node_modules/
 .sass-cache/
 _site/
+.jekyll-metadata

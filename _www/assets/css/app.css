@@ -4784,6 +4784,36 @@ body {
   #stage .display-5 {
     color: chartreuse; }
 
+#blog-title {
+  color: yellow;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  display: block; }
+
+#blog {
+  background: skyblue;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  display: block; }
+  #blog .display-1 {
+    color: yellow;
+    margin-top: 4rem;
+    margin-bottom: 3rem; }
+  #blog .display-5 {
+    color: yellow; }
+  #blog h1 {
+    color: yellow; }
+  #blog h2 {
+    color: white; }
+  #blog h3 {
+    color: chartreuse; }
+  #blog h4 {
+    color: black; }
+  #blog .post-meta {
+    color: chartreuse; }
+  #blog p {
+    color: black; }
+
 #einladung {
   color: #5cb85c;
   background-color: yellow; }
@@ -4807,7 +4837,8 @@ span.anchor {
 
 #warumpraxkit {
   margin-top: 2em;
-  margin-bottom: 0.8em; }
+  margin-bottom: 0.8em;
+  color: white; }
 
 div.card {
   background-color: yellow; }

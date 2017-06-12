@@ -29,7 +29,50 @@
             color: chartreuse;
         }
     }
-    
+
+    #blog-title {
+        color: yellow;
+        margin-top: 3em;
+        margin-bottom: 4em;
+        display:block;
+    }
+
+      #blog {
+        background: skyblue;
+        margin-top: 3em;
+        margin-bottom: 4em;
+        display:block;
+        .display-1 {
+            color: yellow;
+            margin-top: 4rem;
+            margin-bottom: 3rem;
+        }
+        .display-5 {
+            color: yellow;
+        }
+        h1 {
+            color: yellow;
+        }
+        
+        h2 { color: white;
+        } 
+        
+        h3 {
+            color: chartreuse;
+        }
+        h4 {
+            color: black;
+        }
+        .post-meta {
+            color: chartreuse;
+        }
+        p {
+            color: black;
+        }
+        
+        
+    }
+
     #einladung {
         color: #5cb85c;
         background-color: yellow;
@@ -56,6 +99,9 @@ span.anchor {
     #warumpraxkit {
         margin-top: 2em;
         margin-bottom: 0.8em;
+        
+        color: white;
+        
     }
     
     div.card {
