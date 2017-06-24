@@ -13,6 +13,8 @@ categories: aktuell
 
 Unser Webauftritt geht Live. Nach Wochen der Creation, Texterei und Exploration. In einer ersten Version mal. Es fehlen noch ein paar Dinge. Diese fügen wir dann heimlich hinzu.
 
-Wir freuen uns auf Feedback und euren Eintrag in den [Newlsetter](https://praxkit.ch/#news).
+Wir freuen uns auf Feedback und euren Eintrag in den [Newsletter](/#news).
 
-Herzlich, Andrea und Andreas Kapp
+Herzlich, 
+
+Andrea und Andreas Kapp
