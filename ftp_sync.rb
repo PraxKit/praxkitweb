@@ -13,10 +13,10 @@ require 'fileutils'
 # simple class to sync local directory to a remote ftp directory, or copy directories on remote server
 class FtpSync
   def initialize(host, user, password, passive=FALSE)
-    @host = host
-    @user = user
+    @host = host.to_s
+    @user = user.to_s
     @password = password
-    @passive = passive
+    @passive = passive.to_s
   end
 
   # sync a local directory to a remote directory
