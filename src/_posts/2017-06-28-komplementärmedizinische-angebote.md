@@ -6,7 +6,13 @@ summary:    Die Vielfalt an komplementärmedizinischen Angeboten ist gross
 categories: aktuell
 ---
 Weisst Du wieviele komplementärmedizinischen Angebote es auf dem Markt gibt, die über die Zusatzversicherung der Krankenkasse abgerechnet werden können? 
-Die Vielfalt und Angebote im Bereich der Komplementärmedizin sind riesig. Hier nur eine Auswahl von vielen verschiedenen Therapeuten und Therapeutinnen, die ab Januar 2018 betroffen sein werden von der Abrechnung mit dem neuen Rechnungsformular nach Tarif590.
+Unsere Recherche hat ergeben, dass die Vielfalt und Angebote im Bereich der Komplementärmedizin riesig sind. Die grösseren Krankenkassen (z.B. die Visana bieten über ihre Website eine Suche an,
+in der man gezielt nach der Stadt (z.B Biel/Bienne) oder nach der Therapieform (z.B. Fussreflexmassage, Shiatsu, Kinesiologie) suchen kann. Allein in der Stadt Biel sind aktuell im Bereich
+der komplementör medizinischen Angbite 233 registrierte Therapeuten und Therapeutinnen zu finden.
+
+Alle Therapeutinnen und Therapeuten, welche über die Krankenkasse im Bereich der Komplementörmedizin abrechnen sind ab Januar 2018 von der neuen Abrechnung mit dem Rechnungsformular nach Ta 
+
+Hier nur eine Auswahl von vielen verschiedenen Therapeuten und Therapeutinnen, die ab Januar 2018 betroffen sein werden von der Abrechnung mit dem neuen Rechnungsformular nach Tarif590.
 
 Aderlass - Akupressur - Akupunktur - Akupunkt-Massage (APM) -Asiatische Körper- und Energiearbeit
 Atemtherapie
