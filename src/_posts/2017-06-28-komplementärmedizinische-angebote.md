@@ -5,6 +5,9 @@ date:       2017-06-28
 summary:    Das Auswahl an komplementärmedizinischen Angeboten ist gross
 categories: aktuell
 ---
+## Welche Therapien werden über die Komplementärmedizin abgerechnet?
+### Wieviele anerkannte Therapeuten mit komplementärmedizinischen Angeboten gibt es allein in Biel?
+
 Das sind gute News für alle Kunden, die von den vielfältigen Angeboten im Bereich der Komplementärmedizin profitieren möchten und ihre Gesundheit verbessern oder erhalten möchten. 
 Es ist beeindruckend wieviele komplementärmedizinische Angebote es heutzutage auf dem Markt gibt, die über die Zusatzversicherung der Krankenkasse abgerechnet werden können. 
 
@@ -12,7 +15,7 @@ Wussten Sie, dass die gewisse Krankenkassen (z.B. Visana) über ihre Website ein
 in der man gezielt nach der Stadt (z.B Biel/Bienne) oder nach der Therapieform (z.B. Fussreflex-Massage, Shiatsu, Kinesiologie) suchen kann? 
 Allein in der Stadt Biel sind aktuell im Bereich der Komplementärmedizin 233 registrierte Therapeuten zu verzeichnen. 
 
-Hier nur eine Auswahl von Therapeuten, die über die über die Krankenkasse im Bereich der Komplementärmedizin abrechnen können.
+Hier nur eine Auswahl von Therapeuten, die über die Krankenkasse im Bereich der Komplementärmedizin abrechnen können.
 
 Aderlass - Akupressur - Akupunktur - Akupunkt-Massage (APM) -Asiatische Körper- und Energiearbeit -
 Ausleitende Verfahren - Autogenes Training - Bachblüten-Therapie - Bindegewebsmassage - Bioresonanztherapie - Biochemie nach Dr. Schüssler - Blutegel-Therapie - Colon-Hydro-Therapie - 
