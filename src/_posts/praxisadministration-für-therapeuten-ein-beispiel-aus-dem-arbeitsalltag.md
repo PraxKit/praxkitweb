@@ -1,20 +1,18 @@
 ---
 layout:     post
-title:      Praxisadministration - Ein normaler Arbeitsalltag als Selbstständige
-date:       2017-06-12
+title:      Praxisadministration für Therapeuten - Ein Beispiel aus dem Arbeitsalltag
+date:       2017-06-20
 summary:    Vom Termin vereinbaren, zum Termin verschieben oder löschen, zum Kunden erfassen und Rechnung erstellen
 categories: aktuell
 ---
- Am 4. Mai haben wir PraxKit zum ersten mal unser Familie prÃ¤sentiert. Genauer, das Logo und die Bildwelt auf Twitter: [https://twitter.com/praxkit](https://twitter.com/praxkit).
 
-## Yeah!
-### Yeah!
-#### Yeah!
 
-Unser Webauftritt geht Live. Nach Wochen der Creation, Texterei und Exploration. In einer ersten Version mal. Es fehlen noch ein paar Dinge. Diese fÃ¼gen wir dann heimlich hinzu.
+## Weisst du wieviel Zeit du täglich für deine Administration und Organisation als Therapeut und Therapeutin aufwendest?
+### Wieviel Zeit nimmt dich allein die Terminvereinbarung mit dem Kunden in Anspruch?
+#### Hast du dich auch schon gefragt wie du deine Praxisadministration und Rechnungsstellung vereinfachen könntest?
 
-Wir freuen uns auf Feedback und euren Eintrag in den [Newsletter](/#news).
+
 
 Herzlich, 
 
-Andrea und Andreas Kapp
+Andrea Kapp
