@@ -19,6 +19,7 @@ Ich würde gerne ganz einfach mit einem Klick meine Rechnungen sofort bereitstel
 
 Hast du dir schon mal überlegt, was dir dienen würde deinen Aufwand für deine Rechnungsstellung oder deine Administration rund um deine Praxis zu minimieren?
 
+Gerne kannst du hier deine Anregungen und Wünsche für deine Praxisadministration mitteilen [Newsletter](/#news).
 
 Herzlich, 
 
