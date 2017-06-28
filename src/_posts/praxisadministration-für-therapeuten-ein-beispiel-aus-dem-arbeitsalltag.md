@@ -7,10 +7,17 @@ categories: aktuell
 ---
 
 
-## Weisst du wieviel Zeit du täglich für deine Administration und Organisation als Therapeut und Therapeutin aufwendest?
-### Wieviel Zeit nimmt dich allein die Terminvereinbarung mit dem Kunden in Anspruch?
-#### Hast du dich auch schon gefragt wie du deine Praxisadministration und Rechnungsstellung vereinfachen könntest?
+## Weisst du wieviel Zeit du täglich für deine Administration und Organisation aufwendest?
+### Hast du auch Interesse deine Praxisadministration und Rechnungsstellung zu vereinfachen?
+#### Möchtest du deine Zeit auch lieber mit deinen Kunden und der Familie verbringen, anstatt mit der Administration?
 
+Ich mache meine Administration von der Terminvereinbarung bis zur Rechnungsstellung - wie viele andere Therapeutinnen - selber. Das ist auch gut so und möchte ich auch nicht ändern. 
+Jedoch habe ich Interesse mein Aufwand für die Terminvereinbarung und Rechnungsstellung zu reduzieren. 
+Ich habe mich in letzter Zeit geachtet was mich in meinem Arbeitsalltag als Therapeutin rund um die Administration am meisten Zeit kostet.
+Oft ist es die Terminvereinbarung, Terminverschiebung und insbesondere die Rechnungsstellung. 
+Ich würde gerne ganz einfach mit einem Klick meine Rechnungen sofort bereitstellen und ausdrucken können. 
+
+Hast du dir schon mal überlegt, was dir dienen würde deinen Aufwand für deine Rechnungsstellung oder deine Administration rund um deine Praxis zu minimieren?
 
 
 Herzlich, 
