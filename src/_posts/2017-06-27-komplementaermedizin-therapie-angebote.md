@@ -10,9 +10,9 @@ categories: news
 
 Das sind gute News für alle Kunden, die das vielfältige Angebot im Bereich der Komplementärmedizin nutzen möchten und ihre Gesundheit verbessern oder erhalten wollen. 
 
-Es ist beeindruckend wieviele komplementärmedizinische Therapien es heutzutage angeboten werden, die über die Zusatzversicherung der Krankenkasse abgerechnet werden können. 
+Es ist beeindruckend, wie viele komplementärmedizinische Therapien  heutzutage angeboten werden. Viele können über die Zusatzversicherung der Krankenkassen abgerechnet werden. 
 
-Wussten Sie, dass manche Krankenkassen (z.B. Visana) über ihre Website eine [Suchfunktion](https://entry.visana.ch/b2a/apps/saa/thera/) anbieten, in gezielt nach der Stadt (z.B Biel/Bienne) oder nach der Therapieform (z.B. Fussreflex-Massage, Shiatsu, Kinesiologie) gesucht werden kann? 
+Wussten Sie, dass manche Krankenkassen (z.B. Visana) über ihre Website eine [Suchfunktion](https://entry.visana.ch/b2a/apps/saa/thera/) anbieten, mit der gezielt nach der Stadt (z.B Biel/Bienne) oder nach der Therapieform (z.B. Fussreflex-Massage, Shiatsu, Kinesiologie) gesucht werden kann? 
 
 Allein in der Stadt Biel sind aktuell im Bereich der Komplementärmedizin 233 registrierte Therapeuten zu verzeichnen. 
 
