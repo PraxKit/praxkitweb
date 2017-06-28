@@ -1,9 +1,9 @@
 ---
 layout:     post
 title:      Praxisadministration für Therapeuten - Ein Beispiel aus dem Arbeitsalltag
-date:       2017-06-20
-summary:    Vom Termin vereinbaren, zum Termin verschieben oder löschen, zum Kunden erfassen und Rechnung erstellen
-categories: aktuell
+date:       2017-07-01
+summary:    Vom Termin vereinbaren, Termin verschieben oder löschen, zum Kunden erfassen und Rechnung erstellen
+categories: news
 ---
 
 
