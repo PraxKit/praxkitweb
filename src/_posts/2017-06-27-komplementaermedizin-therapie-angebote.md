@@ -8,7 +8,7 @@ categories: news
 
 ### Wieviele anerkannte Therapeuten mit Angeboten aus der Komplementärmedizin gibt es allein in der Stadt Biel?
 
-Das sind gute News für alle Kunden, die von dem vielfältigen Angebot im Bereich der Komplementärmedizin nutzen möchten und ihre Gesundheit verbessern oder erhalten wollen. 
+Das sind gute News für alle Kunden, die das vielfältige Angebot im Bereich der Komplementärmedizin nutzen möchten und ihre Gesundheit verbessern oder erhalten wollen. 
 
 Es ist beeindruckend wieviele komplementärmedizinische Therapien es heutzutage angeboten werden, die über die Zusatzversicherung der Krankenkasse abgerechnet werden können. 
 
