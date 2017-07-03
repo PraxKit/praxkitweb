@@ -4814,6 +4814,34 @@ body {
   #blog p {
     color: black; }
 
+#calc-title {
+  color: yellow;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  display: block; }
+
+#calc-area {
+  background: #4baad3;
+  color: yellow; }
+  #calc-area p {
+    color: black; }
+
+#calc {
+  background: skyblue;
+  margin-top: 3em;
+  margin-bottom: 4em;
+  display: block; }
+  #calc div.input {
+    color: black; }
+  #calc div#empty {
+    color: black; }
+  #calc h3 {
+    color: chartreuse; }
+  #calc h5 {
+    color: yellow; }
+  #calc p {
+    color: black; }
+
 #einladung {
   color: #5cb85c;
   background-color: yellow; }
@@ -4927,6 +4955,9 @@ div.jumbotron.praxis {
 
 #footernotes {
   margin-top: 25px; }
+
+#calc > div input {
+  color: black; }
 
 /*----------------------
 ----- Contact Styles ----

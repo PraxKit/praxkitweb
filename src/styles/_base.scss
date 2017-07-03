@@ -5,6 +5,7 @@
     $brand-color-alt: #E2EAF2;
     $brand-background-1: hsla(0, 0%, 97%, 1.0);
     $brand-background-2: transparent !default;
+    $brand-background-3: #4baad3;
     $brand-font-family: 'Roboto',
     sans-serif !default;
     body {
@@ -66,6 +67,47 @@
         .post-meta {
             color: chartreuse;
         }
+        p {
+            color: black;
+        }
+        
+        
+    }
+
+#calc-title {
+        color: yellow;
+        margin-top: 3em;
+        margin-bottom: 4em;
+        display:block;
+    }
+#calc-area {
+    background: $brand-background-3;
+    color: yellow;
+    p {
+        color: black;
+    }
+}
+#calc {
+        background: skyblue;
+        margin-top: 3em;
+        margin-bottom: 4em;
+        display:block;
+        
+        div.input {
+            color: black;
+        }
+        div#empty {
+            color: black;
+        }
+         
+        h3 {
+            color: chartreuse;
+        }
+
+        h5 {
+            color: yellow;
+        }
+
         p {
             color: black;
         }
@@ -214,6 +256,10 @@ span.anchor {
     
     #footernotes {
         margin-top: 25px;
+    }
+
+    #calc > div input {
+        color: black;
     }
     
     // Contact Form
