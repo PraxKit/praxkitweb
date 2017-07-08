@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Komplementärmedizinische Angebote - Eine grosse Vielfalt
+title:      Komplementär&shy;medizinische Angebote - Eine grosse Vielfalt
 date:       2017-06-27
 summary:    
 categories: news
