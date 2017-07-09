@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function($) {
 
     //Newsletter deaktiviert temporär
     /*
@@ -81,7 +81,7 @@ $(document).ready(function() {
                 $(this).parent().append('<span class="error-message" style="display:none;">' + errorText + '.</span>').find('.error-message').fadeIn('fast');
                 $(this).addClass('inputError');
                 hasError = true;
-            } else if ($(this).is("input[type='email']") || $(this).attr('name') === 'email') {
+            } else if ($(this).is("input[type='email']") || $(this).attr('name') === '_replyto') {
                 var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
                 if (!emailReg.test($.trim($(this).val()))) {
                     var invalidEmail = $(this).data('error-invalid');
@@ -101,7 +101,7 @@ $(document).ready(function() {
             $('#contact-form button').html('<i class="fa fa-spinner fa-spin"></i>' + sendingMessage);
 
             var formInput = $(this).serialize();
-
+       
             $.post($(this).attr('action'), formInput, function(data) {
 
                 console.log(data);
