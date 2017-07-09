@@ -1,6 +1,6 @@
 <?php 
 $emailTo = 'hallo@praxkit.ch';
-$siteTitle = 'PraxKit - Die genial einfache Praxis App';
+$siteTitle = 'PraxKit';
 
 error_reporting(E_ALL ^ E_NOTICE); // hide all basic notices from PHP
 
@@ -8,7 +8,7 @@ error_reporting(E_ALL ^ E_NOTICE); // hide all basic notices from PHP
 if(isset($_POST['submitted'])) {
 	
 	// require a name from user
-	if(trim($_POST['contactName']) === '') {
+	if(trim($_POST['name']) === '') {
 		$nameError =  'Forgot your name!'; 
 		$hasError = true;
 	} else {
@@ -16,7 +16,7 @@ if(isset($_POST['submitted'])) {
 	}
 	
 	// need valid email
-	if(trim($_POST['email']) === '')  {
+	if(trim($_POST['_replyto']) === '')  {
 		$emailError = 'Forgot to enter in your e-mail address.';
 		$hasError = true;
 	} else if (!preg_match("/^[[:alnum:]][a-z0-9_.-]*@[a-z0-9.-]+\.[a-z]{2,4}$/i", trim($_POST['email']))) {
@@ -27,7 +27,7 @@ if(isset($_POST['submitted'])) {
 	}
 		
 	// we need at least some content
-	if(trim($_POST['comments']) === '') {
+	if(trim($_POST['message']) === '') {
 		$commentError = 'You forgot to enter a message!';
 		$hasError = true;
 	} else {
@@ -41,7 +41,7 @@ if(isset($_POST['submitted'])) {
 	// upon no failure errors let's email now!
 	if(!isset($hasError)) {
 		
-		$subject = 'New message to '.$siteTitle.' from '.$name;
+		$subject = 'Feedback '.$siteTitle.' from '.$name;
 		$sendCopy = trim($_POST['sendCopy']);
 		$body = "Name: $name \n\nEmail: $email \n\nMessage: $comments";
 		$headers = 'From: ' .' <'.$email.'>' . "\r\n" . 'Reply-To: ' . $email;
@@ -49,11 +49,11 @@ if(isset($_POST['submitted'])) {
 		mail($emailTo, $subject, $body, $headers);
 		
         //Autorespond
-		$respondSubject = 'Thank you for contacting '.$siteTitle;
-		$respondBody = "Your message to $siteTitle has been delivered! \n\nWe will answer back as soon as possible.";
-		$respondHeaders = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $emailTo;
+		//$respondSubject = 'Thank you for contacting '.$siteTitle;
+		//$respondBody = "Your message to $siteTitle has been delivered! \n\nWe will answer back as soon as possible.";
+		//$respondHeaders = 'From: ' .' <'.$emailTo.'>' . "\r\n" . 'Reply-To: ' . $emailTo;
 		
-		mail($email, $respondSubject, $respondBody, $respondHeaders);
+		//mail($email, $respondSubject, $respondBody, $respondHeaders);
 		
         // set our boolean completion value to TRUE
 		$emailSent = true;
