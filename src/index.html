@@ -330,8 +330,8 @@
                             <div class="col-sm-6 col-md5 text-left">
                                 <!--=== Contact Form ===-->
                                 <div id="contact" class="contact">
-                                    <form id="contact-form" class="form-horizontal contact-form" action="//formspree.io/hallo@praxkit.ch" method="post" novalidate>
-
+                                    <!--form id="contact-form" class="form-horizontal contact-form" action="//formspree.io/hallo@praxkit.ch" method="post" novalidate-->
+                                    <form id="contact-form" class="form-horizontal contact-form" action="//praxkit.ch/anmdeldung.php" method="post" novalidate>
                                         <div class="form-group">
                                             <label class="control-label" for="contact-name">Name</label>
                                             <div class="controls">
@@ -377,11 +377,13 @@
                                         <!-- End textarea -->
 
                                         <input type="hidden" name="_next" value="https://www.praxkit.ch/index.html" />
+                                        <input type="hidden" name="_language" value="de" />
 
                                         <p><button name="submit" type="submit" class="btn btn-submit btn-block" data-error-message="Eingabefehler!"
                                                 data-sending-message="Am Senden..." data-ok-message="Message geschickt"><i class="fa fa-paper-plane-o"></i> Abschicken</button></p>
 
                                         <input type="hidden" name="submitted" id="submitted" value="true" />
+                                        <input type="text" name="_gotcha" style="display:none" />
 
                                     </form>
                                 </div>
