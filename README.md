@@ -6,7 +6,7 @@ build website with jekyll
 Setup
 
         brew install rvm
-        rvm install ruby 2.4.1
+        rvm install ruby 2.4.1 / rbenv install 2.4.1
         gem install bundler
         bundle install
 
