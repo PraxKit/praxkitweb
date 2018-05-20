@@ -45,3 +45,5 @@ See [this post](https://stackoverflow.com/documentation/twitter-bootstrap/9090/m
 Bug https://connect.microsoft.com/IE/feedback/details/802625/min-height-and-flexbox-flex-direction-column-dont-work-together-in-ie-10-11-preview
 
 Fix? https://codepen.io/boostnewmedia/pen/kvtoF
+
+TODO Update Bootstrap
