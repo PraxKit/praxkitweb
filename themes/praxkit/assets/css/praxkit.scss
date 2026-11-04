@@ -58,6 +58,47 @@ body {
 }
 
 // ----------------------------------------------------------------------------
+// Navbar polish. Desktop keeps the old look (logo, tagline, centred links);
+// on phones the bar is logo left / burger right, and the opened menu gets
+// breathing room, tappable rows and a hairline separating it from the bar.
+// ----------------------------------------------------------------------------
+.navbar {
+    --bs-navbar-color: rgba(255, 255, 255, .75);
+    --bs-navbar-hover-color: #fff;
+
+    .navbar-brand img {
+        width: 48px;
+        height: 48px;
+    }
+    @media (min-width: 768px) {
+        .navbar-brand img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .navbar-toggler {
+            border-color: rgba(255, 255, 255, .25);
+        }
+        .navbar-collapse {
+            border-top: 1px solid rgba(255, 255, 255, .15);
+            margin-top: .75rem;
+            padding-top: .5rem;
+        }
+        .navbar-nav .nav-link {
+            padding: .65rem .25rem;
+            font-size: 1.1rem;
+        }
+        .btn-outline-success {
+            display: block;
+            text-align: center;
+            margin: .75rem .25rem 1rem;
+        }
+    }
+}
+
+// ----------------------------------------------------------------------------
 // The original praxkit styles (src/styles/_base.scss), verbatim apart from
 // the asset path (../img/ inside the theme) and dropped dead code.
 // ----------------------------------------------------------------------------
