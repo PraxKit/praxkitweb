@@ -1,0 +1,6 @@
+# Numbered steps with calm circles and a connecting line. The template reads
+# its `schritt` children; anything else inside is dropped.
+name: schritte
+description: Numbered step list. Its children are `schritt` components.
+params: []
+body: markdown

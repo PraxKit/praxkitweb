@@ -1,0 +1,22 @@
+# Page opener: the uppercase eyebrow line, an optional display title and the
+# italic lede. The lede is the body, so it can carry inline markdown.
+name: intro
+description: Editorial page opener - eyebrow line, optional display title, and the italic lede as body.
+params:
+  - name: eyebrow
+    type: string
+    required: true
+    description: Short uppercase line above the title, e.g. "Zusammenarbeit".
+  - name: title
+    type: string
+    required: false
+    description: Display headline (h1). Omit on pages whose template already renders the page title.
+  - name: highlight
+    type: string
+    required: false
+    description: Part of the title set in <strong>, placed after `title` - the design system's "H1 mit strong".
+  - name: tail
+    type: string
+    required: false
+    description: Text after the highlight, e.g. "." or " Designsystem". Leading space is kept.
+body: markdown

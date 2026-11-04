@@ -1,0 +1,5 @@
+# Sources list with a type label per entry. Reads its `quelle` children.
+name: quellen
+description: Sources list. Its children are `quelle` components.
+params: []
+body: markdown

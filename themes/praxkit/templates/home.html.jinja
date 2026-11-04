@@ -1,0 +1,369 @@
+{% extends "base.html.jinja" %}
+
+{# The landing page: the original one-pager from src/index.html, carried over
+   verbatim with only the asset paths (/theme/assets/img/…) and the Jekyll
+   loop over category 'aktuell' resolved. That loop matched exactly one post
+   (tarif590-formular-rechnung); its rendered content is inlined below the
+   same way Jekyll emitted it. The markup stays raw HTML on purpose — the
+   design must not change, and components may not sit inside raw HTML. #}
+
+{% block title %}{{ site.name }} &#8211; Mehr Zeit für dich | Die Praxis Administration mit Terminen und Rechnungen nach Tarif 590{% endblock %}
+
+{% block body_attrs %}id="top" data-bs-spy="scroll" data-bs-target=".navbar" tabindex="0"{% endblock %}
+
+{% block main %}
+    <!-- Intro
+        ======================================== -->
+
+    <div id="intro" class="container-fluid">
+        <div id="stage">
+            <div id="stage-caption">
+                <h1 class="display-5 text-left">Mehr Zeit für das Wesentliche gewinnen</h1>
+                <br>
+                <h2 class="text-left">Einfach deine Praxis Administration erledigen.</h2>
+                <h2 class="text-left">Vom Termin zur Abrechnung. Mit PraxKit.</h2>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+
+                <!-- Jumbotron EINLADUNG
+        ======================================== -->
+                <div class="jumbotron" id="einladung">
+                    <div class="container">
+                        <h2 class="">
+                            Liebe Therapeutinnen und Therapeuten
+                        </h2>
+                        <p class="lead">
+                            Bist Du auch selbstständig und suchst noch nach einer <em>einfachen Lösung</em> für deine Administration?
+                        </p>
+                        <p class="lead"> PraxKit soll Spass machen. Den Aufwand für deine Rechnungstellung minimieren. Die Abrechnung mit Tarif 590 ermöglichen.
+                        </p>
+                        <p class="lead">
+                            Sobald wir PraxKit fertig haben und es getestet ist, schicken wir dir eine Einladung. Wenn Du Ideen hast und diese einbringen willst, melde dich doch bei uns.
+                        </p>
+                        <p class="lead text-left">
+                            <a href="#kontakt" class="btn btn-lg btn-success" role="button">Mitmachen <i class="fa-solid fa-chevron-right"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-sm-6">
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Therapeutin Andrea
+        ======================================== -->
+    <a id="praxis" class="anchor invisible"></a>
+    <div id="praxisblock" class="container-fluid ">
+
+        <div class="row ">
+            <div class="col-sm-6">
+                <!-- praxis image -->
+                <img id="andrea" class="img" src="/theme/assets/img/andrea-kapp.png" alt="Therapeutin Andrea Kapp">
+            </div>
+            <div class="col-sm-6 ">
+
+                <!-- praxis content -->
+                <div class="jumbotron praxis">
+
+                    <h1 class="h1">So spare ich 6 Minuten Admin pro Sitzung.
+                    </h1>
+                    <p class="lead">
+                        Bei 80 Terminen brauche ich mindestens einen Tag Administration. PraxKit reduziert dies auf wenige Minuten. Es erfordert keine PC Installation. Jederzeit sehe ich, wie viel ich verdient habe. Und was noch kommen wird.
+                    </p>
+                    <p>
+                        <br>
+                        <a class="btn btn-primary btn-lg btn-success" href="#news">Mehr erfahren <i class="fa-solid fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Werte
+        ======================================== -->
+    <!-- Internal Anchor with CSS to account for fixed navigation header -->
+    <a id="werte" class="anchor invisible"></a>
+    <div id="values" class="container-fluid">
+
+        <div class="row">
+            <div class="col-sm-4"> </div>
+            <div class="col-sm-8">
+                <div id="werteschaffen" class="jumbotron">
+                    <br>
+                    <h1 class="display-5">Welche Werte wollen wir schaffen? </h1>
+                    <br>
+                    <h2>
+                        Mehr Zeit für Café. <span class="text-alternative"> Entspannen, Diskutieren, Nachdenken.</span> Mehr Zeit für Familie und Freunde. <span class="text-alternative">Tun, was einem wichtig ist.</span> Sport statt Bürokram.
+                        <span class="text-alternative">Dem Körper etwas Gutes tun.</span>
+                    </h2>
+
+                </div>
+            </div>
+
+            <div class="container-fluid" style="width:1200px;flex-wrap:nowrap"> <!-- ie 11 hack -->
+
+                <div class="row">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-8">
+
+                        <div id="kunden" class="jumbotron">
+                            <h1 class="display-5">
+                                Deinen Kunden schenkst Du was Du am besten kannst.
+                            </h1>
+                            <h2>
+                                Den Rest erledigst Du mit PraxKit nebenbei: Termine, Adressen, Rechnungen, Zahlungseingänge.
+                            </h2>
+                        </div>
+
+                        <!-- Produkt Angebot ======================================== -->
+                        <a id="features" class="anchor invisible"></a>
+
+                        <h1 id="warumpraxkit" class="display-4">Warum PraxKit?</h1>
+
+
+                        <div class="card-group">
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="text-center"><i class="fa-regular fa-thumbs-up fa-lg"></i>&nbsp;</h3><br>
+                                    <h4 class="card-title"> Von Therapeutinnen für Therapeuten </h4>
+                                    <p class="card-text">PraxKit wird jetzt gerade intensiv zusammen mit Psychologinnen und Therapeuten entwickelt.</p>
+                                    <p class="card-text"><small class="text-muted">Melde dich unten beim Newsletter an. Wir halten dich auf dem Laufenden.</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="text-center"><i class="fa-solid fa-wand-magic-sparkles fa-lg"></i>&nbsp;</h3><br>
+                                    <h4 class="card-title"> Termine mit Kunden abmachen oder verschieben</h4>
+                                    <p class="card-text"> Fertig mit den vielen Telefonaten. PraxKit bringt die Lösung für eine einfache Terminvereinbarung
+                                        per Email und SMS mit deinen Kunden. </p>
+                                    <p class="card-text"><small class="text-muted">PraxKit macht Kunden Terminvorschläge, blockiert Termine. Erinnert deine Kunden.</small></p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="text-center"><i class="fa-regular fa-thumbs-up fa-lg"></i>&nbsp;</h3><br>
+                                    <h4 class="card-title"> Rechnungen, auch nach Tarif 590, und Zahlungs&shy;kontrolle ganz einfach</h4>
+                                    <p class="card-text"> Mit einem Klick die Rechnung ausgedruckt und Zahlungseingänge kontrolliert. Auch mittels
+                                        Smartphone.
+                                    </p>
+
+                                    <p class="card-text"><small class="text-muted">Du hast im Cockpit die Übersicht über die Einnahmen.</small></p>
+                                </div>
+                            </div>
+                             <div class="card">
+                                <div class="card-body">
+                                    <h3 class="text-center"><i class="fa-solid fa-gear fa-spin fa-1x fa-lg"></i>&nbsp;</h3><br>
+
+                                    <h4 class="cart-title"> Du bezahlst nur, wenn Du auch verdienst  </h4>
+                                    <p class="card-text">PraxKit kostet
+                                        dich pro Sitzung oder Behandlung. Gerade soviel wie das Porto in der Schweiz.</p>
+                                        <p> Du kannst also entspannt die Ferien geniessen.
+                                    </p>
+                                    <p class="card-text"><small class="text-muted">
+                                    - 100 Rappen für Rechnungserstellung<br>
+                                    - 85 Rappen für Kalenderfunktionen</small></p>
+                                    <a href="/preise" class="btn btn-primary btn-sm">Mehr <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="news" class="jumbotron">
+                            <div class="row">
+                                <div class="col-sm-6 col-md5 text-left ">
+                                    <h1 class="display-5">News
+                                    </h1>
+                                    <h2> <span class="text-alternative">In unserem Blog.</span>
+                                    </h2>
+                                    <h4>Wir halten dich <a href="/blog">hier</a> auf dem Laufenden mit was wir uns beschäftigen.
+                                    </h4>
+                                </div>
+                                <div class="col-sm-6 col-md5 text-left">
+
+                                        <!--=== Newsletter Form ===-->
+                                        <div id="newsletter" class="contact">
+                                            <h1 class="display-5">Up-to-date bleiben
+                                            </h1>
+                                            <h2> <span class="text-alternative">Hier anmelden.</span>
+                                            </h2>
+                                            <h4>Du hörst etwa alle zwei Monate von uns.
+                                            </h4>
+                                            <p> <br>
+                                                <a class="btn btn-primary   " href="https://goo.gl/forms/GlxifA754LzRSEka2" target="_blank"> Name und Email <i class="fa-solid fa-chevron-right"></i></a>
+                                            </p>
+                                        </div>
+                                </div>
+                                    <!-- End newsletter-form -->
+                            </div>
+                                <!-- row -->
+                            <!-- Blog entries (the one post in category 'aktuell',
+                                 rendered the way the Jekyll loop emitted it) -->
+                            <div class="row">
+                                <div class="col-sm-12 col-md5 text-left ">
+                                    <hr>
+                                   <h1 class="display-5">
+                                        Aktuell
+                                    </h1>
+
+                                    <a class="lead" href="/blog/2017-06-28-tarif590-formular-rechnung"><h2><span class="text-alternative">Tarif 590 - Die einfache Lösung für die Abrechnung</span></h2></a>
+
+                                    <h3>Krankenkassen wollen Standard</h3>
+                                    <p>Die Krankenkassen verlangen per 1. Januar 2018 die Abrechnungen mit einem standardisiertes Rechnungsformular für Leistungen der Komplementärmedizin.</p>
+                                    <p>In den Fachverbänden gibt es noch Diskussionen.</p>
+                                    <p>Wir unterstützen dich mit Praxkit bei Tarif 590 und entwickeln eine für dich attraktive Lösung, die deine Kundendaten speichert und dir die Abrechnung nach Tarif 590 erleichtert.</p>
+                                    <h3>Mobil</h3>
+                                    <p>PraxKit wird auch auf dem Smartphone laufen. Es braucht also keinen Computer mit Bildschirm in der Praxis.</p>
+                                    <p>Interessiert? Dann melde dich hier für unseren <a href="#news">Newsletter</a> an, damit du auf dem Laufenden bleibst. Wir melden uns bei dir, wenn wir bereit sind.</p>
+                                    <p>Bis bald,</p>
+                                    <p>Andrea und Andreas Kapp</p>
+
+                                    <p>
+                                      <br>
+                                      <a class="btn btn-primary " href="/blog">Blog <i class="fa-solid fa-chevron-right"></i></a>
+                                    </p>
+                                      <!-- end blog -->
+                                </div>
+                            </div>
+                            <!-- row -->
+
+                        </div>
+
+
+
+                    <!-- Kontakt
+        ======================================== -->
+                    <!-- Internal Anchor with CSS to account for fixed navigation header -->
+                    <a id="kontakt" class="anchor invisible"></a>
+                    <div id="cntct" class="jumbotron">
+
+                        <div class="row">
+
+                            <div class="col-sm-6 col-md5 text-left">
+
+                                <h1 class="display-5">Mitmachen
+                                </h1>
+                                <h2> <span class="text-alternative"> Feedback geben.</span>
+                                </h2>
+
+                                <h4>Was wünschst Du dir als Erleichterung im Arbeitsalltag?
+                                    <br> Wir freuen uns über jegliche Anregung von dir.
+
+                                </h4>
+                                <br>
+
+                                <div class="row">
+                                    <div class="col-sm-6 col-md5">
+
+                                        <div class="card" style="width: 120px;">
+                                            <img class="card-img-top" src="/theme/assets/img/andrea-kapp-120px.png" alt="Andrea Kapp">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Andrea Kapp</h5>
+                                                <p class="card-text">Psycho- therapeutin</p>
+                                                <a href="http://kapp.ch/#ueberuns" class="btn btn-outline-secondary  btn-sm">Mehr <i class="fa-solid fa-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+
+                                    <div class="col-sm-6 col-md5 ">
+
+                                        <div class="card" style="width: 120px;">
+                                            <img class="card-img-top" src="/theme/assets/img/andreas.kapp-bw-120px.png" alt="Andreas Kapp">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Andreas Kapp</h5>
+                                                <p class="card-text">Software Engineer</p>
+
+                                                <a href="https://www.kapp.technology/andreaskapp/" class="btn btn-outline-secondary btn-sm">Mehr <i class="fa-solid fa-chevron-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <br>
+
+
+
+                            </div>
+                            <div class="col-sm-6 col-md5 text-left">
+                                <!--=== Contact Form ===-->
+                                <div id="contact" class="contact">
+                                    <form id="contact-form" class="form-horizontal contact-form" action="https://formspree.io/hallo@praxkit.ch" method="post" novalidate>
+                                        <div class="form-group">
+                                            <label class="control-label" for="contact-name">Name</label>
+                                            <div class="controls">
+                                                <input id="contact-name" name="name" placeholder="Name" class="form-control contact-requiredField" data-new-placeholder="Your name"
+                                                    type="text" data-error-empty="Bitte geben Sie ihren Namen ein">
+
+                                                <i class="fa-solid fa-user"></i>
+                                            </div>
+                                        </div>
+                                        <!-- End name input -->
+
+                                        <div class="form-group">
+                                            <label class="control-label" for="contact-mail">Email</label>
+                                            <div class=" controls">
+
+                                                <input id="contact-mail" name="_replyto" placeholder="Email" class="form-control contact-requiredField" data-new-placeholder="Your email"
+                                                    type="email" data-error-empty="Bitte geben Sie ihre Email ein" data-error-invalid="Ungültige Email Adresse">
+                                                <i class="fa-solid fa-envelope"></i>
+                                            </div>
+                                        </div>
+                                        <!-- End email input -->
+
+                                        <div class="form-group">
+                                            <label class="control-label" for="contact-phone">Telefon</label>
+                                            <div class=" controls">
+
+                                                <input id="contact-phone" name="phone" placeholder="Telefonnummer" class="form-control contact-requiredField" data-new-placeholder="Your Phone"
+                                                    type="text" data-error-empty="Bitte geben Sie ihre Telefonnummer ein">
+                                                <i class="fa-solid fa-mobile-screen"></i>
+                                            </div>
+                                        </div>
+                                        <!-- End Phone input -->
+
+                                        <div class="form-group">
+                                            <label class="control-label" for="contact-message">Message</label>
+                                            <div class="controls">
+
+                                                <textarea id="contact-message" name="message" placeholder="Nachricht" class="form-control contact-requiredField" data-new-placeholder="Your message"
+                                                    rows="6" data-error-empty="Bitte erfassen Sie ihre Nachricht"></textarea>
+                                                <i class="fa-solid fa-comment"></i>
+                                            </div>
+                                        </div>
+                                        <!-- End textarea -->
+
+                                        <input type="hidden" name="_next" value="https://www.praxkit.ch/index.html" />
+                                        <input type="hidden" name="_language" value="de" />
+
+                                        <p><button name="submit" type="submit" class="btn btn-submit btn-block" data-error-message="Eingabefehler!"
+                                                data-sending-message="Am Senden..." data-ok-message="Message geschickt"><i class="fa-regular fa-paper-plane"></i> Abschicken</button></p>
+
+                                        <input type="hidden" name="submitted" id="submitted" value="true" />
+                                        <input type="text" name="_gotcha" style="display:none" />
+
+                                    </form>
+                                </div>
+                                <!-- End contact-form -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- col-sm-8 -->
+
+        </div>
+    </div>
+{% endblock %}

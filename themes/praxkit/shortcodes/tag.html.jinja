@@ -1,0 +1,2 @@
+{%- set tone = attrs.tone | default("calm") -%}
+{% if attrs.href %}<a class="tag {{ tone }}" data-canonical="tag" href="{{ url(attrs.href) }}">{{ body }}</a>{% else %}<span class="tag {{ tone }}" data-canonical="tag">{{ body }}</span>{% endif %}

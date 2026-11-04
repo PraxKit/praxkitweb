@@ -1,0 +1,395 @@
+// ============================================================================
+//  PraxKit — the original 2017 design, ported from src/styles/_base.scss
+//  onto Bootstrap 5. The look (tree hero, yellow/chartreuse/skyblue blocks)
+//  is unchanged; only the framework underneath moved: Bootstrap 4 alpha 6 +
+//  jQuery + Tether + Font Awesome 4 became Bootstrap 5 (CDN, no jQuery) +
+//  Font Awesome 6. This file compiles through Accent's Sass pipeline.
+// ============================================================================
+
+$brand-color: #0074BE;
+$brand-color-alt: #E2EAF2;
+$brand-background-1: hsla(0, 0%, 97%, 1.0);
+$brand-background-3: #4baad3;
+$brand-font-family: 'Roboto', sans-serif;
+
+body {
+    font-family: $brand-font-family;
+}
+
+// ----------------------------------------------------------------------------
+// Bootstrap 4 pieces the design depends on that Bootstrap 5 dropped or
+// recoloured.
+// ----------------------------------------------------------------------------
+
+// BS5 removed .jumbotron — this is the BS4 alpha definition the design used.
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #eceeef;
+    border-radius: .3rem;
+    @media (min-width: 576px) {
+        padding: 4rem 2rem;
+    }
+}
+
+// BS4 alpha palette for the two button roles the pages use; BS5's defaults
+// (#0d6efd / #198754) are visibly different.
+.btn-primary {
+    --bs-btn-bg: #0275d8;
+    --bs-btn-border-color: #0275d8;
+    --bs-btn-hover-bg: #025aa5;
+    --bs-btn-hover-border-color: #01549b;
+}
+.btn-success {
+    --bs-btn-bg: #5cb85c;
+    --bs-btn-border-color: #5cb85c;
+    --bs-btn-hover-bg: #449d44;
+    --bs-btn-hover-border-color: #419641;
+}
+.btn-outline-success {
+    --bs-btn-color: #5cb85c;
+    --bs-btn-border-color: #5cb85c;
+    --bs-btn-hover-bg: #5cb85c;
+    --bs-btn-hover-border-color: #5cb85c;
+}
+
+.text-alternative {
+    color: #7fff00;
+}
+
+// ----------------------------------------------------------------------------
+// The original praxkit styles (src/styles/_base.scss), verbatim apart from
+// the asset path (../img/ inside the theme) and dropped dead code.
+// ----------------------------------------------------------------------------
+
+#intro {
+    overflow: hidden;
+    position: relative;
+    background: url("../img/praxkit-tree.jpg") top center;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+}
+
+#stage {
+    color: yellow;
+    margin-top: 6em;
+    margin-bottom: 7em;
+    .display-5 {
+        color: chartreuse;
+    }
+}
+
+#blog-title {
+    color: yellow;
+    margin-top: 3em;
+    margin-bottom: 4em;
+    display: block;
+}
+
+#blog {
+    background: skyblue;
+    margin-top: 3em;
+    margin-bottom: 4em;
+    display: block;
+    .display-1 {
+        color: yellow;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
+    }
+    .display-5 {
+        color: yellow;
+    }
+    h1 {
+        color: yellow;
+    }
+    h2 {
+        color: white;
+    }
+    h3 {
+        color: chartreuse;
+    }
+    h4 {
+        color: black;
+    }
+    .post-meta {
+        color: chartreuse;
+    }
+    p {
+        color: black;
+    }
+}
+
+#calc-title {
+    color: yellow;
+    margin-top: 3em;
+    margin-bottom: 4em;
+    display: block;
+}
+#calc-area {
+    background: $brand-background-3;
+    color: yellow;
+    p {
+        color: black;
+    }
+}
+#calc {
+    background: skyblue;
+    margin-top: 3em;
+    margin-bottom: 4em;
+    display: block;
+
+    div.input {
+        color: black;
+    }
+    div#empty {
+        color: black;
+    }
+    h3 {
+        color: chartreuse;
+    }
+    h5 {
+        color: yellow;
+    }
+    p {
+        color: black;
+    }
+}
+
+#calc > div input {
+    color: black;
+}
+
+#einladung {
+    color: #5cb85c;
+    background-color: yellow;
+}
+
+#praxisblock {
+    overflow: hidden;
+    position: relative;
+    background: url("../img/bg.jpg") top center;
+    background-size: cover;
+}
+
+#warumpraxkit {
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    color: white;
+}
+
+div.card {
+    background-color: yellow;
+}
+
+div.jumbotron.praxis {
+    margin-top: 7rem;
+    background: rgb(83, 119, 184); /* ie8 and below */
+    background: rgba(83, 119, 184, 0.8);
+    h1 {
+        padding: 0;
+        color: yellow;
+    }
+    p {
+        color: white;
+    }
+    text-align: center;
+}
+
+@media (min-width: 1px) and (max-width: 575px) {
+    img#andrea.img {
+        width: 550px;
+    }
+    div.jumbotron.praxis {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+}
+/* lg */
+@media (min-width: 993px) {
+    img#andrea.img {
+        width: auto;
+    }
+}
+
+#values {
+    overflow: hidden;
+    position: relative;
+    background: url("../img/praxkit-baum.jpg") top center;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+    h2 {
+        color: white;
+    }
+    span.text-alternative,
+    h3 {
+        color: chartreuse;
+    }
+    .display-5 {
+        color: yellow;
+        margin-top: 1.2em;
+        margin-bottom: 0.5em;
+    }
+}
+
+#kunden {
+    background: skyblue;
+    margin-top: 8em;
+    margin-bottom: 6em;
+}
+
+#werteschaffen {
+    background: #5cb85c;
+    margin-top: 8em;
+    margin-bottom: 6em;
+}
+
+#cntct {
+    background: #4baad3;
+    margin-top: 8em;
+    margin-bottom: 6em;
+    .display-5 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+#news {
+    background: skyblue;
+    margin-top: 8em;
+    margin-bottom: 6em;
+    .display-5 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+// Footer
+.card-img-left {
+    border-bottom-left-radius: calc(.25rem - 1px);
+    border-top-left-radius: calc(.25rem - 1px);
+    float: left;
+    padding-right: 5px;
+    margin-bottom: -1.25em;
+}
+
+.footer {
+    background-color: black;
+    font-size: 0.8rem;
+    color: darkgrey;
+    padding-bottom: 3em;
+    padding-top: 2em;
+    #address {
+        padding-left: 8em;
+    }
+}
+
+#footernotes {
+    margin-top: 25px;
+    // BS5 dropped .list-inline auto-spacing between plain <li>; keep the
+    // old horizontal footer list.
+    ul.list-inline li {
+        display: inline-block;
+        margin-right: .75rem;
+    }
+    a {
+        color: darkgrey;
+    }
+}
+
+// Contact Form
+/*----------------------
+----- Contact Styles ----
+------------------------*/
+
+.contact {
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+}
+
+.contact-form .form-group label {
+    display: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.contact-form.no-placeholder .form-group label {
+    display: block;
+}
+
+.contact-form .controls {
+    padding: 0;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+.contact-form .form-control {
+    background: transparent !important;
+    border: none;
+    border-bottom: 3px solid transparent;
+    border-radius: 0;
+    outline: none;
+    box-shadow: none;
+    height: 56px;
+    font-size: 21px;
+    line-height: 32px;
+    font-weight: 100;
+    padding-left: 64px;
+    transition: border-color .3s ease-out;
+    border-radius: 2px;
+}
+
+.contact-form .form-group {
+    position: relative;
+}
+
+.contact-form .form-group [class*=fa] {
+    display: block;
+    width: 64px;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    color: #e5e5e5;
+    font-size: 24px;
+    line-height: 53px;
+    text-align: center;
+    font-weight: 300;
+    opacity: 0.5;
+    transition: opacity .2s ease-out;
+}
+
+.contact-form.no-placeholder .form-group [class*=fa] {
+    top: 30px;
+}
+
+.contact-form .form-control:focus + [class*=fa] {
+    opacity: 1;
+}
+
+.contact-form textarea.form-control {
+    height: auto;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 21px;
+    line-height: 32px;
+    padding-top: 10px;
+}
+
+.contact-form .form-control:focus {
+    background: #fff;
+    border-bottom: 3px solid chartreuse;
+    outline: none;
+    box-shadow: none;
+    transition: border-color .3s ease-in;
+}
+
+.btn-submit {
+    color: #424949;
+    font-size: 1.5rem;
+    font-weight: 300;
+    background: chartreuse;
+    outline: none !important;
+    transition: opacity .2s ease-out;
+}

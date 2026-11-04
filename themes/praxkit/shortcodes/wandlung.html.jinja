@@ -1,0 +1,22 @@
+{#- Composes `feld` children (an arrow between consecutive fields) and the
+    `fuss` child. Bodies arrive between blank lines, so each sentence renders
+    as a paragraph (smart quotes included) inside its field and inherits the
+    field's type from .satz / .fuss. Closing tags in column 0. -#}
+<div class="wandlung">
+<div class="zeile">
+{%- for c in children if c.name == "feld" %}
+{%- if not loop.first %}
+<div class="pfeil" aria-hidden="true">→</div>
+{%- endif %}
+{%- set typ = c.attrs.typ | default("imperativ") %}
+<div class="feld {{ "imp" if typ == "imperativ" else "kon" }}"><small>{{ c.attrs.label | default("Imperativ (alarmgeladen)" if typ == "imperativ" else "Konstatierender Satz") }}</small><div class="satz">
+{{ c.body }}
+</div></div>
+{%- endfor %}
+</div>
+{%- for c in children if c.name == "fuss" %}
+<div class="fuss">
+{{ c.body }}
+</div>
+{%- endfor %}
+</div>

@@ -1,0 +1,8 @@
+name: schritt
+description: One step. Belongs inside `schritte`.
+params:
+  - name: title
+    type: string
+    required: true
+    description: The step heading.
+body: markdown

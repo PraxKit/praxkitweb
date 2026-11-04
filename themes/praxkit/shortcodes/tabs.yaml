@@ -1,0 +1,10 @@
+# Canonical `tabs`: composes its `tab` children. base.html.jinja loads
+# assets/js/tabs.js only on pages whose content contains a tabs component.
+name: tabs
+description: A tabbed switcher whose panels are its `tab` children.
+params:
+  - name: group
+    type: string
+    required: false
+    description: Tab groups with the same name switch together. Defaults to default.
+body: markdown

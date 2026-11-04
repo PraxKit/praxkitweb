@@ -1,0 +1,4 @@
+name: fuss
+description: Footer line of a `wandlung`.
+params: []
+body: markdown

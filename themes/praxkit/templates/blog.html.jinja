@@ -1,0 +1,31 @@
+{% extends "default.html.jinja" %}
+
+{# The old blog.html listing: yellow display title, one skyblue #blog
+   jumbotron per post with linked title, teaser and the Weiter button.
+   The teaser is the post's lead (frontmatter `summary` of the Jekyll
+   post) rather than Jekyll's 40-word truncation of the body. #}
+{% block inner %}
+  <div id="blog-title" >
+    <h1 class="display-4"> News Übersicht</h1>
+
+    <div class="blog-list">
+        {% for post in page.collection %}
+        <div id="blog" class="jumbotron">
+        <h1>
+          <a class="display-5 " href="{{ url(post.url) }}">
+											 {{ post.title }}
+										</a>
+        </h1>
+        <p> {{ post.lead }} <br><br>
+          <a href="{{ url(post.url) }}" class="btn btn-sm btn-primary "> Weiter <i class="fa-solid fa-chevron-right "></i></a>
+        </p>
+        </div>
+        {% endfor %}
+        <p>
+          <br>
+        </p>
+
+    </div>
+
+  </div>
+{% endblock %}

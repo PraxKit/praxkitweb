@@ -1,7 +1,18 @@
+# Accent CMS
+public/
+.accent/
+.diagram-cache/
+.media-cache/
+.playwright-mcp/
+
+# Legacy Jekyll build
 target/
-ftp_env.sh
 node_modules/
 .sass-cache/
 _site/
 .jekyll-metadata
+
+# Secrets — never commit FTP credentials (the old ftp_env.sh leaked one; rotate it)
+ftp_env.sh
+
 .DS_Store

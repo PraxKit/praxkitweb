@@ -1,0 +1,12 @@
+name: tab
+description: One panel of a tabbed switcher. Belongs inside `tabs`.
+params:
+  - name: label
+    type: string
+    required: false
+    description: The text on the tab button.
+  - name: id
+    type: string
+    required: false
+    description: Panel identifier. Defaults to the slugified label.
+body: markdown

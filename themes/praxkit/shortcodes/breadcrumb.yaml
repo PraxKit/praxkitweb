@@ -1,0 +1,5 @@
+# Canonical `breadcrumb`: a trail of links written in markdown.
+name: breadcrumb
+description: A trail of links leading to the current page, written in markdown.
+params: []
+body: markdown

@@ -1,0 +1,2 @@
+{%- set variant = attrs.variant | default("default") -%}
+<a href="{{ url(attrs.href | default("#")) }}" class="btn btn-{{ variant }}" data-canonical="button">{{ body }}</a>

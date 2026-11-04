@@ -1,0 +1,14 @@
+{#- Canonical callout in infobox clothing. `data-canonical` / `data-part` are
+    the landmarks every conforming theme's callout carries. Body between blank
+    lines, closing tag in column 0. -#}
+{%- set type = attrs.type | default("info") -%}
+{%- set title = attrs.title | default(type | capitalize) -%}
+{%- if attrs.collapsible -%}
+<details class="infobox infobox-{{ type }}" role="complementary" aria-label="{{ title }}" data-canonical="callout"><summary class="infobox-title" data-part="title">{{ title }}</summary>
+{{ body }}
+</details>
+{%- else -%}
+<div class="infobox infobox-{{ type }}" role="complementary" aria-label="{{ title }}" data-canonical="callout"><p class="infobox-title" data-part="title">{{ title }}</p>
+{{ body }}
+</div>
+{%- endif -%}

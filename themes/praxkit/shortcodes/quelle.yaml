@@ -1,0 +1,8 @@
+name: quelle
+description: One source. Belongs inside `quellen`.
+params:
+  - name: typ
+    type: string
+    required: true
+    description: Short type label, e.g. Buch, Web, Artikel.
+body: markdown

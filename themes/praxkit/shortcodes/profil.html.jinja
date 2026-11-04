@@ -1,0 +1,12 @@
+{#- The `?w=…&fmt=webp` queries are rewritten by `accent build` to the
+    generated variant files (and served on the fly by `accent serve`). -#}
+{%- set src = media(attrs.image) -%}
+<div class="profil">
+<figure class="profil-bild"><img src="{{ src }}?w=480&amp;fmt=webp" srcset="{{ src }}?w=320&amp;fmt=webp 320w, {{ src }}?w=480&amp;fmt=webp 480w, {{ src }}?w=640&amp;fmt=webp 640w" sizes="(min-width: 700px) 300px, 260px" width="{{ attrs.width | default(640) }}" height="{{ attrs.height | default(714) }}" decoding="async" alt="{{ attrs.alt }}"></figure>
+<div class="profil-text">
+<div class="eyebrow">{{ attrs.eyebrow }}</div>
+<div class="lede">
+{{ body }}
+</div>
+</div>
+</div>

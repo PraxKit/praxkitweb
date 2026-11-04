@@ -1,0 +1,36 @@
+# Canonical `card`, rendered as the theme's .karte. With `href` the whole card
+# is the link. Theme extras: `tag` (pill in the title), `tone` (its colour)
+# and `soon` (a second, grey pill for formats not yet bookable).
+name: card
+description: Surface card with title, optional pill and link - the theme's Karte.
+params:
+  - name: title
+    type: string
+    required: false
+    description: The card heading.
+  - name: href
+    type: reference
+    required: false
+    description: Makes the whole card a link.
+  - name: image
+    type: media
+    required: false
+    description: Image above the title (path under the shared media directory).
+  - name: alt
+    type: string
+    required: false
+    description: Alt text for the image. Omit only when the image is decorative.
+  - name: tag
+    type: string
+    required: false
+    description: Pill shown after the title, e.g. a price or a category.
+  - name: tone
+    type: enum
+    values: [calm, alarm]
+    required: false
+    description: Colour of the pill. Defaults to calm.
+  - name: soon
+    type: string
+    required: false
+    description: Grey second pill, e.g. "in Vorbereitung".
+body: markdown

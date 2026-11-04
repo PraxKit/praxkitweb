@@ -1,0 +1,5 @@
+# Grid for cards. Its body is a run of `card` components.
+name: karten
+description: Responsive grid that lays out the cards inside it.
+params: []
+body: markdown

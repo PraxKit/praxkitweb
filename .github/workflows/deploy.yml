@@ -1,0 +1,131 @@
+name: Build & Deploy to netzone.ch
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:   # allow manual runs from the Actions tab
+
+# Avoid overlapping deploys.
+concurrency:
+  group: deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Accent CMS
+        # Public installer from accentcms.dev; it resolves the platform, checks
+        # the release checksum, and installs to ~/.local/bin.
+        #
+        # No edition pattern and no ACCENT_GH_TOKEN any more: the public
+        # releases ship one binary per platform carrying the full feature set,
+        # with the tier unlocked at runtime by a licence key. Verified against
+        # the v0.23.1 artifact that an unlicensed binary still compiles Sass,
+        # which is the thing the relax theme depends on (css/main.scss) --
+        # that was the reason the old step pinned the Standard edition.
+        # Re-verified on v0.26.0: the binary reports "License: Core (free,
+        # includes serve + build)", compiles the Sass, runs `accent validate`
+        # and builds the search index without a key. Re-verified on v0.27.4
+        # the same way. v0.28.1 was verified locally (validate + build clean,
+        # same artifacts incl. .htaccess), but on a pro-licensed binary — the
+        # first CI run is the Core-edition check for 0.28.
+        #
+        # The site needs 0.27 or later: the build writes the .htaccess
+        # (build.header_artifacts in config.yaml), and before 0.27 that file
+        # carried `Options -Indexes`, which this host has never been shown to
+        # allow (a refused override is a 500 on every page).
+        #
+        # --require-verify (install.sh since 0.26): a checksum, signature or
+        # signing key that cannot be fetched or checked fails the install
+        # instead of printing a warning, so CI never runs an unverified
+        # binary. ubuntu-latest ships gpg and sha256sum.
+        #
+        # ACCENT_VERSION as an env var rather than `sh -s -- --version`: a flag
+        # after the piped URL is silently swallowed, the env form is not.
+        #
+        # Fetched with retries and a mirror, not piped straight into sh: a
+        # single-attempt fetch of accentcms.dev failed the deploy once with
+        # "Failed to connect ... port 443" minutes after the same URL had
+        # worked, so one unlucky moment took the pipeline down. The GitHub
+        # mirror is the URL install.sh documents for itself and is byte
+        # identical; it is the fallback, not the default, so the canonical
+        # host stays primary.
+        run: |
+          ACCENT_WANT="${{ vars.ACCENT_VERSION || 'v0.28.1' }}"
+          INSTALLER=""
+          for url in "https://accentcms.dev/install.sh" \
+                     "https://raw.githubusercontent.com/AccentCMS/accent/main/install.sh"; do
+            if curl -fsSL --retry 3 --retry-delay 2 --retry-connrefused \
+                    --max-time 60 -o /tmp/accent-install.sh "$url"; then
+              INSTALLER="$url"; break
+            fi
+            echo "::warning::Accent installer unreachable at $url; trying next source"
+          done
+          if [ -z "$INSTALLER" ]; then
+            echo "::error::could not fetch the Accent installer from any source"
+            exit 1
+          fi
+          echo "Installer fetched from: $INSTALLER"
+          ACCENT_VERSION="$ACCENT_WANT" sh /tmp/accent-install.sh --require-verify
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          "$HOME/.local/bin/accent" --version
+          # Fail loudly on a version that isn't the one asked for: CI silently
+          # ran 0.19.1 while local development was on 0.23.1 until this pin.
+          "$HOME/.local/bin/accent" --version | grep -q "${ACCENT_WANT#v}" || {
+            echo "::error::expected accent ${ACCENT_WANT}, got $("$HOME/.local/bin/accent" --version)"
+            exit 1
+          }
+
+      - name: Validate content and theme
+        # Accent 0.26 made this a real gate for a static site: it fails a
+        # theme that lacks a canonical component (relax implements all nine in
+        # themes/relax/shortcodes/), a component use that does not match its
+        # manifest, a link to a draft page, a
+        # duplicate frontmatter key and a page the build would drop. Infos
+        # (the orphaned /error/404 parent) do not fail it; warnings and
+        # errors do.
+        run: accent validate
+
+      - name: Build static site
+        run: |
+          accent build --clean \
+            --output "$GITHUB_WORKSPACE/public" \
+            --base-url "${{ vars.SITE_URL || 'https://www.praxkit.ch' }}"
+          test -f "$GITHUB_WORKSPACE/public/404.html"
+          # The build writes .htaccess (build.header_artifacts in config.yaml):
+          # clean URLs, the www -> apex 301, the 404 page and the headers.
+          # Never copy one over it. Without the file, the mirror's --delete
+          # would remove the live one, so a build that wrote none must stop
+          # the deploy.
+          test -f "$GITHUB_WORKSPACE/public/.htaccess"
+
+      - name: Deploy via FTPES (lftp mirror)
+        env:
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+          FTP_REMOTE_DIR: ${{ secrets.FTP_REMOTE_DIR }}
+          FTP_PORT: ${{ vars.FTP_PORT || '21' }}
+          FTP_VERIFY_CERT: ${{ vars.FTP_VERIFY_CERT || 'yes' }}
+        # `timeout` is the outer guard: without it a stalled data connection
+        # hangs the job until the 6h runner limit rather than failing. The
+        # net:* settings are the inner one -- lftp's default is to retry a
+        # dead transfer forever, silently. --verbose so a future stall shows
+        # which file it died on instead of ending at the apt-get output.
+        timeout-minutes: 15
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+          timeout 600 lftp -u "$FTP_USER,$FTP_PASSWORD" "ftp://$FTP_HOST:$FTP_PORT" -e "
+            set ftp:ssl-force true;
+            set ftp:ssl-protect-data true;
+            set ssl:verify-certificate $FTP_VERIFY_CERT;
+            set net:timeout 20;
+            set net:max-retries 3;
+            set net:reconnect-interval-base 5;
+            mirror --reverse --delete --parallel=2 --verbose \
+              --exclude-glob .DS_Store \
+              '$GITHUB_WORKSPACE/public/' '$FTP_REMOTE_DIR/';
+            bye"

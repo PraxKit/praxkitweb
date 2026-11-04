@@ -1,0 +1,5 @@
+# Small-print caveat under a section ("Grenzen", "Hinweis zur Therapie").
+name: warnung
+description: Small-print caveat in the soft ink colour.
+params: []
+body: markdown

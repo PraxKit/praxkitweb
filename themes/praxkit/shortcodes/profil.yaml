@@ -1,0 +1,27 @@
+# Portrait beside an eyebrow + lede (the /ueber opener). The image is a
+# cut-out with alpha, served as WebP in three widths through the media
+# pipeline.
+name: profil
+description: Portrait beside eyebrow and lede; the body is the lede.
+params:
+  - name: image
+    type: media
+    required: true
+    description: Path under the shared media directory, e.g. /akp-portrait.png.
+  - name: alt
+    type: string
+    required: true
+    description: Who or what the portrait shows.
+  - name: eyebrow
+    type: string
+    required: true
+    description: Uppercase line above the lede.
+  - name: width
+    type: number
+    required: false
+    description: Intrinsic width of the source image. Defaults to 640.
+  - name: height
+    type: number
+    required: false
+    description: Intrinsic height of the source image. Defaults to 714.
+body: markdown

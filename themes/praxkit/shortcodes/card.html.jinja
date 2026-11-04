@@ -1,0 +1,18 @@
+{#- Canonical card as .karte. The opening tag stands alone on its line so the
+    markdown parser opens a raw-HTML block for it whether it is an <a> or a
+    <div>; the body then arrives between blank lines and renders as the
+    card's paragraph(s). `data-canonical` / `data-part` are the landmarks. -#}
+{%- set tone = attrs.tone | default("calm") -%}
+{%- if attrs.href -%}
+<a class="karte" href="{{ url(attrs.href) }}" data-canonical="card">
+{%- else -%}
+<div class="karte" data-canonical="card">
+{%- endif %}
+{%- if attrs.image %}
+<img class="karte-bild" data-part="image" src="{{ media(attrs.image) }}" alt="{{ attrs.alt | default('') }}" loading="lazy">
+{%- endif %}
+{%- if attrs.title %}
+<h3 data-part="title">{{ attrs.title }}{% if attrs.tag %} <span class="tag {{ tone }}">{{ attrs.tag }}</span>{% endif %}{% if attrs.soon %} <span class="tag soon">{{ attrs.soon }}</span>{% endif %}</h3>
+{%- endif %}
+{{ body }}
+{% if attrs.href %}</a>{% else %}</div>{% endif %}

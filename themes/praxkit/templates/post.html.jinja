@@ -1,0 +1,30 @@
+{% extends "default.html.jinja" %}
+
+{# The old Jekyll post layout: skyblue #blog jumbotron, title, date line,
+   the post body, and the post footer (Feedback / Twitter / Blog links). #}
+{% block inner %}
+<div id="blog" class="jumbotron">
+
+  <div class="post-header">
+    <h1>{{ page.title }}</h1>
+    <span class="post-meta">{{ page.date | date("%d.%m.%Y") }}</span><br>
+  </div>
+  <br>
+  <article class="post-content">
+    {{ page.content | safe }}
+  </article>
+
+  <div class="post-footer">
+    <p>
+    <br>
+    Danke für dein <a href="/#kontakt">Feedback.</a>
+    <br>
+    Uns auf <a href="https://x.com/praxkit"><i class="fa-brands fa-x-twitter"></i>&nbsp;X</a> folgen.
+    </p>
+    <p>
+      <br>
+      <a class="btn btn-primary " href="/blog">Blog <i class="fa-solid fa-chevron-right"></i></a>
+    </p>
+  </div>
+</div>
+{% endblock %}

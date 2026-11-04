@@ -1,0 +1,26 @@
+# Canonical `callout`, rendered with the theme's infobox markup and classes.
+# `type` reaches the class as infobox-<type>; the stylesheet colours info
+# (blue), success (calm green), warning (amber) and danger (terracotta).
+name: callout
+description: Titled box that sets a passage apart - the theme's infobox.
+params:
+  - name: type
+    type: string
+    required: false
+    description: info | success | warning | danger. Reaches the class infobox-<type>. Defaults to info.
+  - name: title
+    type: string
+    required: false
+    description: Uppercase title line and the accessible label. Defaults to the capitalised type.
+  - name: collapsible
+    type: boolean
+    required: false
+    description: Render as a <details> that starts closed.
+body: markdown
+migrate:
+  positional: [type]
+  from:
+    - name: infobox
+    - name: alert
+      rename:
+        variant: type

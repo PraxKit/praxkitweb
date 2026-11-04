@@ -1,0 +1,7 @@
+# The Introvision pivot: an alarm-laden imperative beside its sober
+# "Es kann sein, dass ..." counterpart, with an optional footer line. Reads
+# its `feld` and `fuss` children.
+name: wandlung
+description: Two-field transformation block (Imperativ -> konstatierender Satz) with footer.
+params: []
+body: markdown

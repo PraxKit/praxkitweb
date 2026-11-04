@@ -1,0 +1,5 @@
+# A neutral note with the terracotta accent bar: "Hinweis", "Für wen?", "Region".
+name: hinweis
+description: Note box with the alarm-coloured accent bar on the left.
+params: []
+body: markdown

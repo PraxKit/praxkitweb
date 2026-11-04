@@ -1,0 +1,13 @@
+# Canonical `accordion`: a <details>/<summary> pair.
+name: accordion
+description: A collapsible section behind a summary line.
+params:
+  - name: summary
+    type: string
+    required: false
+    description: The always-visible line. Defaults to "Details".
+  - name: open
+    type: boolean
+    required: false
+    description: Start expanded.
+body: markdown

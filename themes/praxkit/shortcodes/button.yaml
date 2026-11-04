@@ -1,0 +1,15 @@
+# Canonical `button`. Not used by the site's pages yet; part of the contract.
+name: button
+description: A link styled as a button.
+params:
+  - name: variant
+    type: enum
+    values: [default, primary, secondary]
+    required: false
+    description: default (outline), primary (solid calm), secondary (quiet).
+  - name: href
+    type: reference
+    required: true
+    description: Where the button links to.
+body: inline
+inline: true

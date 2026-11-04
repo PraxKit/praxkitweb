@@ -1,0 +1,25 @@
+name: Praxkit
+description: Faithful port of the original 2017 praxkit.ch design (Bootstrap 4 alpha one-pager, tree hero, scrollspy navigation) onto Accent CMS. The compiled app.min.css and the page markup are carried over from the Jekyll site in src/.
+version: "2.0.0"
+author: Kapp Technology GmbH
+license: MIT
+assets:
+  css:
+    - css/praxkit.scss
+styling:
+  sass:
+    enabled: true
+    load_paths:
+      - css
+
+# css/praxkit.scss is the original design layer (src/styles/_base.scss)
+# ported onto Bootstrap 5; the heavy lifting comes from the Bootstrap CDN
+# in base.html.jinja. The stylesheet references images relative to itself
+# (url(../img/praxkit-tree.jpg)), which is why the images live in
+# assets/img/ next to assets/css/.
+#
+# Declared components (shortcodes/) are inherited from kapp.land's relax theme
+# solely to satisfy `accent validate`'s canonical-component contract. The
+# pages do not use them: the original design is raw Bootstrap markup carried
+# in the templates, and a component written inside raw HTML crashes the build
+# anyway (stack overflow, known 0.26+ limit).

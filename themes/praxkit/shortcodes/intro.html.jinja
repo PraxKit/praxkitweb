@@ -1,0 +1,14 @@
+{#- Page opener. The body is the lede; it arrives between blank lines
+    (body: markdown) and renders as a paragraph inside the .lede div, which
+    carries the Spectral italic. `.page-header` padding only applies when the
+    opener renders its own h1 (home, design system); default-template pages
+    already have the title above. Closing tags stay in column 0. -#}
+<header class="intro{% if attrs.title %} page-header{% endif %}">
+<div class="eyebrow">{{ attrs.eyebrow }}</div>
+{%- if attrs.title %}
+<h1>{{ attrs.title }}{% if attrs.highlight %} <strong>{{ attrs.highlight }}</strong>{% endif %}{{ attrs.tail | default("") }}</h1>
+{%- endif %}
+<div class="lede">
+{{ body }}
+</div>
+</header>

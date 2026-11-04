@@ -1,0 +1,88 @@
+server:
+  address: "0.0.0.0"
+  port: 3334
+
+content:
+  directory: "./content"
+
+theme:
+  name: "praxkit"
+  directory: "./themes"
+
+site:
+  name: "PraxKit"
+  url: "https://www.praxkit.ch"
+  language: "de-CH"
+
+# Client-side search, wired to the theme's "/" dialog. `simple` is pinned
+# for the same reason as on kapp.land: DocFind matched title words only on a
+# small German-language site (kapp.land measurement on 0.26), and the simple
+# backend's index has been clean since 0.24. Known limit of both backends:
+# the tokenizer splits German words at umlauts (accentcms bug b318).
+search:
+  backend: simple
+  exclude:
+    - "/404"
+    - "/tags/*"
+
+# Asset fingerprinting: the built CSS (and calc-opt.js, referenced through
+# the `fingerprint` filter in preise.html.jinja) get content-hashed
+# filenames, so the netzone edge cache can never shadow a deploy with the
+# previous build's assets.
+build:
+  fingerprint:
+    enabled: true
+  # The build writes the site's .htaccess from http_headers and
+  # build.routing (Accent >= 0.27):
+  # - clean URLs: /preise answers 200 from preise/index.html instead of
+  #   Apache 301ing to /preise/.
+  # - canonical_host: praxkit.ch (the apex) 301s to www.praxkit.ch, the
+  #   spelling the old site always used and Google indexed.
+  # - ErrorDocument 404 /404.html.
+  # - the script policy, nosniff, frame and referrer headers, Cache-Control.
+  # The build refuses to overwrite an .htaccess it did not write, and the
+  # deploy must not copy one over it: one file, one owner.
+  header_artifacts: ["apache"]
+  routing:
+    error_document: /404.html
+    canonical_host: www.praxkit.ch
+
+# Cache-Control for the generated .htaccess. Same reasoning as kapp.land:
+# the netzone edge keeps a page for its s-maxage, and the default 3600
+# hides a deploy for up to an hour. Images keep 7 days.
+http_headers:
+  cache:
+    defaults:
+      pages: "public, max-age=300, s-maxage=60"
+      media: "public, max-age=604800"
+
+# Code block rendering
+code:
+  theme: "base16-ocean.dark"
+
+# Markdown extensions
+markdown:
+  tables: true
+  footnotes: true
+  strikethrough: true
+  tasklists: true
+  heading_attributes: true
+  wikilinks: true
+  smart_punctuation: true
+  math: false
+  definition_lists: true
+  gfm: true
+  superscript: false
+  subscript: false
+  metadata_blocks: true
+
+# Development settings
+dev:
+  hot_reload: true
+  browser_reload: true
+  debounce_ms: 50
+
+# Text-based diagrams: server-rendered so `accent serve` shows the SVG
+# (the theme has no client-side Mermaid loader).
+diagrams:
+  render_mode: server

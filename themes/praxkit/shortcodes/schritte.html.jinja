@@ -1,0 +1,10 @@
+{#- Composes `schritt` children like the shipped tabs: each child's title is
+    an attribute, its body arrives between blank lines and renders as the
+    step's paragraph. -#}
+<ol class="schritte">
+{%- for c in children if c.name == "schritt" %}
+<li><h3>{{ c.attrs.title }}</h3>
+{{ c.body }}
+</li>
+{%- endfor %}
+</ol>

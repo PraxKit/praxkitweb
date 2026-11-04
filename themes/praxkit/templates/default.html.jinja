@@ -1,0 +1,14 @@
+{% extends "base.html.jinja" %}
+
+{# The old Jekyll default layout wrapped every inner page's content in the
+   #intro container (which carries the tree background) and a .measure
+   column — kept exactly so. #}
+{% block main %}
+    <div id="intro" class="container-fluid" >
+      <div class="measure">
+        {% block inner %}
+        {{ page.content | safe }}
+        {% endblock %}
+      </div>
+    </div>
+{% endblock %}

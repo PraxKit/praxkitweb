@@ -1,0 +1,36 @@
+{% extends "default.html.jinja" %}
+
+{# The old preise.html page: title, jumbotron, the Elm price calculator
+   (calc-opt.js, carried over unchanged), text and the Anmelden button.
+   Both script tags carry the nonce; no defer, because the inline
+   bootstrap needs `Calc` defined and both sit at the end of <body>. #}
+{% block inner %}
+  <div id="calc-title" >
+    <h1 class="display-4">Was es kostet?</h1>
+
+</div>
+<div id="calc-area" class="jumbotron">
+       <h2>Die Basis kostet einen Franken pro Sitzung. Soviel wie A-Post.<br>
+    Keine Fixkosten.
+    Keine Wartungspauschalen oder Lizenzkosten.<br>
+    </h2>
+
+        <div id="calc" class="jumbotron">
+        </div>
+        <div>
+          <p>PraxKit ist bei den Preisen einfach und transparent. Es gibt keine Überraschungen.</p>
+          <p>Die Bezahlung erfolgt gegen Rechnung innert 10 Tagen. Es braucht keine Kreditkarten.</p>
+          <p>
+            <a href="/#news" class="btn btn-primary "> Jetzt anmelden <i class="fa-solid fa-chevron-right "></i></a>
+          </p>
+        </div>
+
+ </div>
+{% endblock %}
+
+{% block scripts %}
+   <script src="/{{ 'theme/assets/js/calc-opt.js' | fingerprint }}" nonce="{{ nonce }}"></script>
+   <script nonce="{{ nonce }}">
+    Calc.main(document.getElementById('calc'))
+</script>
+{% endblock %}

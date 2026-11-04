@@ -1,0 +1,15 @@
+# Canonical `tag`: a small pill inside a sentence. Theme extra: `tone`.
+name: tag
+description: Small inline pill, optionally a link.
+inline: true
+params:
+  - name: href
+    type: reference
+    required: false
+    description: Where the pill links to.
+  - name: tone
+    type: enum
+    values: [calm, alarm, soon]
+    required: false
+    description: calm (green), alarm (terracotta) or soon (grey). Defaults to calm.
+body: inline

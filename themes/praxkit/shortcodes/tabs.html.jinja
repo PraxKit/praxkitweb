@@ -1,0 +1,8 @@
+{%- set group = attrs.group | default("default") -%}
+<div class="tabs" data-canonical="tabs" data-tab-group="{{ group }}"><div class="tabs-nav" role="tablist" data-part="tablist">
+{%- for c in children if c.name == "tab" %}{% set id = c.attrs.id | default(c.attrs.label | slugify) %}<button class="tabs-tab{{ " active" if loop.first else "" }}" role="tab" data-part="tab" aria-selected="{{ "true" if loop.first else "false" }}" data-tab="{{ id }}" aria-controls="tab-panel-{{ id }}">{{ c.attrs.label }}</button>{% endfor -%}
+</div>
+{%- for c in children if c.name == "tab" %}{% set id = c.attrs.id | default(c.attrs.label | slugify) %}<div class="tabs-panel{{ " active" if loop.first else "" }}" role="tabpanel" data-part="panel" id="tab-panel-{{ id }}">
+{{ c.body }}
+</div>{% endfor -%}
+</div>

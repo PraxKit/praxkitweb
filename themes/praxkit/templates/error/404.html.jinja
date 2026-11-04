@@ -1,0 +1,12 @@
+{% extends "default.html.jinja" %}
+
+{% block title %}Seite nicht gefunden &#8211; {{ site.name }}{% endblock %}
+
+{% block inner %}
+  <div id="blog-title">
+    <h1 class="display-4">Seite nicht gefunden</h1>
+  </div>
+  <div id="blog" class="jumbotron">
+    {{ page.content | safe }}
+  </div>
+{% endblock %}

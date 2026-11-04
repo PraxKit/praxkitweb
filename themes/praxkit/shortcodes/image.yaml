@@ -1,0 +1,16 @@
+# Canonical `image`: a figure with alt text and an optional caption.
+name: image
+description: An image with alt text and an optional caption.
+params:
+  - name: src
+    type: media
+    required: true
+    description: Path under the shared media directory, e.g. /diagram.png.
+  - name: alt
+    type: string
+    required: true
+    description: What the image shows. Empty only for a decorative image.
+  - name: caption
+    type: string
+    required: false
+    description: Visible text under the image.

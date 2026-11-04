@@ -1,0 +1,7 @@
+<ul class="quellen">
+{%- for c in children if c.name == "quelle" %}
+<li><span class="q-typ">{{ c.attrs.typ }}</span>
+{{ c.body }}
+</li>
+{%- endfor %}
+</ul>
