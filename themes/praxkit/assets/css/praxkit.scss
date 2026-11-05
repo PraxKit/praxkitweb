@@ -108,7 +108,6 @@ body {
     position: relative;
     background: url("../img/praxkit-tree.jpg") top center;
     background-size: cover;
-    font-family: "Lato", sans-serif;
 }
 
 #stage {
@@ -212,6 +211,13 @@ body {
     background-size: cover;
 }
 
+// The portrait may never overflow its column (the 2017 CSS forced 550px
+// on viewports that are at most 575px wide).
+img#andrea.img {
+    max-width: 100%;
+    height: auto;
+}
+
 #warumpraxkit {
     margin-top: 2em;
     margin-bottom: 0.8em;
@@ -238,7 +244,7 @@ div.jumbotron.praxis {
 
 @media (min-width: 1px) and (max-width: 575px) {
     img#andrea.img {
-        width: 550px;
+        width: 100%;
     }
     div.jumbotron.praxis {
         margin-top: 0;
@@ -257,7 +263,6 @@ div.jumbotron.praxis {
     position: relative;
     background: url("../img/praxkit-baum.jpg") top center;
     background-size: cover;
-    font-family: "Lato", sans-serif;
     h2 {
         color: white;
     }
@@ -347,17 +352,9 @@ div.jumbotron.praxis {
     background-position: 0 100%;
 }
 
-.contact-form .form-group label {
-    display: none;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 100;
-    text-transform: uppercase;
-}
-
-.contact-form.no-placeholder .form-group label {
-    display: block;
-}
+// The labels keep the 2017 placeholder-only look via Bootstrap's
+// .visually-hidden on the elements themselves; the jQuery contact.js
+// that toggled .no-placeholder is gone.
 
 .contact-form .controls {
     padding: 0;
@@ -399,10 +396,6 @@ div.jumbotron.praxis {
     font-weight: 300;
     opacity: 0.5;
     transition: opacity .2s ease-out;
-}
-
-.contact-form.no-placeholder .form-group [class*=fa] {
-    top: 30px;
 }
 
 .contact-form .form-control:focus + [class*=fa] {
